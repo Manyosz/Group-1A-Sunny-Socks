@@ -1,0 +1,13 @@
+# macOS folder settings
+.DS_Store
+
+# Local environment files, which may contain passwords or API keys
+.env
+.env.*
+!.env.example
+
+# Dependencies, if you use Node.js
+node_modules/
+
+# Debug logs
+*.log
