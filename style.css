@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+
+    img{
+        width: 140px;
+    }
+}
+.header-pages{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-page{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    overflow: hidden;
+    background-image: url(/images/welcome-friends.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    img{
+        width: 850px;
+        height: 400px;
+    }
+    p{
+        justify-self: center;
+    }
+}
+
+.home-discount{
+    border: 1px solid black;
+    justify-self: center;
+}
+
+.home-category{
+    border: 1px solid black;
+}
