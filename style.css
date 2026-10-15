@@ -1,0 +1,77 @@
+body{
+    margin-top: 0px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    img{
+        width: 140px;
+        
+    }
+}
+
+.header-page{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-button{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.hero-page{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    overflow: hidden;
+    background-image: url(/images/welcome-friends.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    p{
+        justify-self: center;
+    }
+}
+
+.home-discount{
+    border: 1px solid black;
+    justify-self: center;
+}
+
+.home-category{
+    border: 1px solid black;
+}
+
+.home-category-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+    .home-category-card{
+        border: 1px solid black;
+    }
+}
+
+.home-bestseller{
+    border: 1px solid black;
+    
+    .home-bestseller-card{
+        border: 1px solid black;
+    }
+    .home-bestseller-order{
+        border: 1px solid black;
+    }
+}
