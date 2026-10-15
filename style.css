@@ -1,10 +1,19 @@
+body{
+    margin-top: 0px;
+}
+
 .header{
     display: flex;
     flex-direction: row;
     border: 1px solid black;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    width: 100%;
     img{
         width: 140px;
+        
     }
 }
 

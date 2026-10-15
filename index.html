@@ -7,38 +7,50 @@
     <title>Sunny Socks</title>
 </head>
 <body>
+
+<!-- <?php include __DIR__ . '/header.php'; ?>  
+this will include the menu bar for every html page and we don't gó
+have to copy paste it on every page and if we change it it will automatically change in every page so 
+         USE THIS!--> 
+
 <!-- Menu bar -->
-    <header class="header">
-        <img src="/images/sunny-socks-logo.png" alt="Sunny Socks logo">
-        <div class="header-page">
-            <p>Home</p>
-            <p>Shop</p>
-            <p>Order</p>
-            <p>About</p>
-        </div>
-        <div class="header-button">
-            <a href="#">
-                <span>🛒</span>
-                <p>Basket</p>
-                <span>0</span>
-            </a>
+    <nav>
+        <header class="header">
+            <img src="/images/sunny-socks-logo.png" alt="Sunny Socks logo">
+            <div class="header-page">
+                <p>Home</p>
+                <p>Shop</p>
+                <p>Order</p>
+                <p>About</p>
+            </div>
 
-            <a href="#">
-                <span>🌙</span>
-            </a>
-            <!-- language change -->
-            <details>
-                <summary>🌐 EN</summary>
-                <p>🇬🇧 English</p>
-                <p>🇳🇱 Nederlands</p>
-            </details>
+            <!-- Also needs some php to be able to count the items and also animations -->
+            <div class="header-button">
+                <a href="#">
+                    <span>🛒</span>
+                    <p>Basket</p>
+                    <span>0</span>
+                </a>
 
-            <details>
-                <summary>🔍 Search</summary>
-            </details>
+                <a href="#">
+                    <span>🌙</span>
+                </a>
+    <!-- language change -->
+                <details>
+                    <!-- here it need a php or something to be able to change it -->
+                    <summary>🌐 EN</summary> th
+                    <p>🇬🇧 English</p>
+                    <p>🇳🇱 Nederlands</p>
+                </details>
 
-        </div>
-    </header>
+                <!-- Searchbar pop up -->
+                <details>
+                    <summary>🔍 Search</summary>
+                </details>
+
+            </div>
+        </header>
+    </nav>
 <!-- hero image section -->
     <section>
         <div class="hero-page">
@@ -86,6 +98,35 @@
             </div>
         </div>
     </section>
+
+<!-- Our story section -->
+
+    <section>
+        <div class="home-our-story">
+            <p>Sunny Socks About</p>
+            <p>Our Story ☀️</p>
+            <p>We believe everyday things can make a brighter world. 
+                That's why we create high-quality, colourful socks, 
+                produced ethically and with care for people and the planet.</p>
+            <a href="#">
+                <p>Learn More →</p>
+            </a>
+        </div>
+    </section>
+
+<!-- home info -->
+
+    <section>
+        <div>
+
+        </div>
+    </section>
+
+<!-- Footer -->
+
+    <footer>
+
+    </footer>
 
 </body>
 </html>
