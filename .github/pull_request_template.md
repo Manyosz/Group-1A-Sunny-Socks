@@ -2,9 +2,10 @@
 
 Describe the change and the task it completes.
 
-## How was it checked?
+## Anything else?
 
-List the pages, screen sizes, and features you checked. Add screenshots for visual changes.
+Mention anything unfinished, anything you need help with, or anything the team should know. 
+Add a screenshot if it helps.
 
 ## Ready for review
 
