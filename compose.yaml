@@ -1,0 +1,9 @@
+name: Sunny-Socks
+
+services:
+  web:
+    image: php:8.4-apache
+    ports:
+      - "127.0.0.1:8081:80"
+    volumes:
+      - ./:/var/www/html

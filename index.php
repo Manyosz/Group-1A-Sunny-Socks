@@ -8,14 +8,13 @@
 </head>
 <body>
 
-<!-- <?php include __DIR__ . '/header.php'; ?>  
-this will include the menu bar for every html page and we don't gó
-have to copy paste it on every page and if we change it it will automatically change in every page so 
+<!--  < ?php include __DIR__ . '/header.php'; ?>  
+this will include the menu bar for every html page and we don't
+have to copy paste it on every page and if we change it, it will automatically change in every page so 
          USE THIS!--> 
 
 <!-- Menu bar -->
-    <nav>
-        <header class="header">
+    <header class="header">
             <img src="/images/sunny-socks-logo.png" alt="Sunny Socks logo">
             <div class="header-page">
                 <p>Home</p>
@@ -38,7 +37,7 @@ have to copy paste it on every page and if we change it it will automatically ch
     <!-- language change -->
                 <details>
                     <!-- here it need a php or something to be able to change it -->
-                    <summary>🌐 EN</summary> th
+                    <summary>🌐 EN</summary>
                     <p>🇬🇧 English</p>
                     <p>🇳🇱 Nederlands</p>
                 </details>
@@ -49,8 +48,8 @@ have to copy paste it on every page and if we change it it will automatically ch
                 </details>
 
             </div>
-        </header>
-    </nav>
+    </header>
+
 <!-- hero image section -->
     <section>
         <div class="hero-page">
@@ -123,6 +122,11 @@ have to copy paste it on every page and if we change it it will automatically ch
     </section>
 
 <!-- Footer -->
+
+<!-- <?php include __DIR__ . '/footer.php'; ?>  
+this will include the footer for every html page and we don't
+have to copy paste it on every page and if we change it, it will automatically change in every page so 
+         USE THIS!--> 
 
     <footer>
 
