@@ -1,4 +1,5 @@
 section {
-    display: grid;
-    grid-template-columns: (1);
+    display: flex;
+    border: solid black 5px;
+    padding: 20px;
 }

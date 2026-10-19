@@ -48,7 +48,19 @@
 <Main>
     <Article>
         <section>
-            Our story section
+            <p>Our story section</p>
+        </section>
+        <section>
+            <p>who we are</p>
+        </section>
+        <section>
+            <p>our values</p>
+        </section>
+        <section>
+            <p>the team</p>
+        </section>
+        <section>
+            <p>stats bubble</p>
         </section>
     </Article>
 </Main>
