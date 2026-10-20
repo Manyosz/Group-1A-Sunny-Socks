@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>About us</title>
 </head>
-<body>
+<body class="body-bg-bt">
+<main class="main-pst">
       <nav>
         <header class="header">
             <img src="/images/sunny-socks-logo.png" alt="Sunny Socks logo">
@@ -45,25 +46,27 @@
             </div>
         </header>
     </nav>
-<Main>
-    <Article>
-        <section>
+    <article class="article-pst article-bg-bt">
+        <section class="story-card section-pst">
             <p>Our story section</p>
         </section>
-        <section>
+        <section class="who-we-are section-pst">
             <p>who we are</p>
         </section>
-        <section>
+        <section class="our-values section-pst">
             <p>our values</p>
         </section>
-        <section>
+        <section class="the-team section-pst">
             <p>the team</p>
         </section>
-        <section>
+        <section class="stats-bubble section-pst">
             <p>stats bubble</p>
         </section>
-    </Article>
-</Main>
+        <footer class="footer-things">
+            <p>The foot</p>
+        </footer>
+    </article>
+</main>
 
 </body>
 

@@ -1,5 +1,110 @@
-section {
+/*CSS for the about us page. */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+  --navy: #17447f;
+  --muted-blue: #7188a8;
+  --butter-yellow: #fff0a6;
+  --border-yellow: #ffce65;
+  --shadow-pink: #f8b5c2;
+  --purple-hue: #EADCFF;
+  --rosy-red: #fda8af;
+}
+.article-bg-bt {
+    background-image: 
+    radial-gradient(circle, rgba(255, 191, 89, 0.72) 1.6px, transparent 1.8px),
+    linear-gradient(110deg, #fff0b5 0%, #ffe5d7 53%, #ffdce5 100%);
+    background-size: 24px 24px, 100% 100%;
+}
+
+.body-bg-bt {
+  background: linear-gradient(110deg,#C378D5 0%,#A979E9 45%,#6D9FE8 100%);
+}
+
+.main-pst {
     display: flex;
-    border: solid black 5px;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-pst {
+        border-radius: 0px;
+        background-color: white;
+        width: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+}         
+.section-pst {
+            display: flex;
+            flex-direction:column;
+            border: solid black 1px;
+            justify-content: space-around;
+            padding: 5px;
+            margin: 5px;  
+}
+
+.story-card {
+  width: auto;
+  min-height: 100px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: var(--butter-yellow);
+  border: 1.5px solid var(--border-yellow);
+  border-radius: 25px;
+  box-shadow: 4px 5px 0 var(--shadow-pink);
+}
+.who-we-are {
+    width: auto;
+    display: flex;
+    min-height:100;
+    height: 125px;
+    align-items: center;
+    background: var(--purple-hue);
+    border: 1.5px solid var(--border-yellow);
+    border-radius: 25px;
+    box-shadow: 4px 5px 0 var(--shadow-pink);
+}
+.our-values {
+    width: auto;
+    display: flex;
+    min-height:100;
+    height: 125px;
+    align-items: center;
+    background: var(--rosy-red);
+    border: 1.5px solid var(--border-yellow);
+    border-radius: 25px;
+    box-shadow: 4px 5px 0 var(--shadow-pink);
+}
+.the-team {
+    width: auto;
+    display: flex;
+    min-height:100;
+    height: 125px;
+    align-items: center;
+    background: var(--butter-yellow);
+    border: 1.5px solid var(--border-yellow);
+    border-radius: 25px;
+    box-shadow: 4px 5px 0 var(--shadow-pink);
+}
+.stats-bubble {
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--navy);
+    border-radius: 15px;
+    
+}
+.footer-things {
+    margin-top: 50px;
+    width: auto;
+    display: flex;
+    height: 300px;
+    background: var(--navy);
 }
