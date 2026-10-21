@@ -9,43 +9,7 @@
 </head>
 <body class="body-bg-bt">
 <main class="main-pst">
-      <nav>
-        <header class="header">
-            <img src="/images/sunny-socks-logo.png" alt="Sunny Socks logo">
-            <div class="header-page">
-                <p>Home</p>
-                <p>Shop</p>
-                <p>Order</p>
-                <p>About</p>
-            </div>
-
-            <!-- Also needs some php to be able to count the items and also animations -->
-            <div class="header-button">
-                <a href="#">
-                    <span>🛒</span>
-                    <p>Basket</p>
-                    <span>0</span>
-                </a>
-
-                <a href="#">
-                    <span>🌙</span>
-                </a>
-    <!-- language change -->
-                <details>
-                    <!-- here it need a php or something to be able to change it -->
-                    <summary>🌐 EN</summary> th
-                    <p>🇬🇧 English</p>
-                    <p>🇳🇱 Nederlands</p>
-                </details>
-
-                <!-- Searchbar pop up -->
-                <details>
-                    <summary>🔍 Search</summary>
-                </details>
-
-            </div>
-        </header>
-    </nav>
+      <?php include __DIR__ . '/header.php'; ?>
     <article class="article-pst article-bg-bt">
         <section class="story-card section-pst">
             <h1>Our story 🧶</h1>
