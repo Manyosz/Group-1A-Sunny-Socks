@@ -411,7 +411,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* PAGE LAYOUT */
 
-.sizingGuide{
+.sizingGuide {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 0 12px;
