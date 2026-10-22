@@ -23,10 +23,12 @@ have to copy paste it on every page and if we change it, it will automatically c
 <!-- hero image section -->
     <section>
         <div class="hero-page">
-            <p>Sunny Socks</p>
-            <p>Colourful socks for work, home, sport & a greener world.</p>
-            <p>Shop the Collection</p>
-            <p>Our Story</p>
+            <h1><span class="home-yellow-text">Sunny</span> Socks</h1>
+            <p>Colourful socks for work, home, sport & a greener <br> world.</p>
+            <div class="hero-buttons">
+                <a href="Shop-page-collections.html" class="home-shop-button">Shop the collection</a>
+                <a href="About_us.php" class="home-story-button">Our story</a>
+            </div>
         </div>
     </section>
 
