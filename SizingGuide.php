@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="sizingGuide">
+<body class="sizingGuide themeSizing">
 
     <!-- HERO SECTION -->
 
-    <section class="headBox heroBackground bgSizing">
+    <section class="headBox heroBackground">
 
         <div class="headText">
             <p class="t1">
@@ -93,7 +93,7 @@
 
     </div>
 
-    <footer class="foot">
+    <section class="footContact">
         <div class="part1">
             <h2 class="help">Still need a hand?</h2>
             <p>Browse our products or ask the Sunny Socks community.</p>
@@ -107,7 +107,7 @@
                 <h3>Visit Q&A</h3>
             </a>
         </div>
-    </footer>
+</section>
 
 </body>
 </html>

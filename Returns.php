@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="sizingGuide">
+<body class="sizingGuide themeReturns">
 
     <!-- HERO SECTION -->
 
-    <section class="headBox heroBackground bgReturns">
+    <section class="headBox heroBackground">
 
         <div class="headText">
             <p class="t1">
@@ -76,7 +76,7 @@
         </section>
     </div>
 
-    <footer class="foot">
+    <section class="footContact">
         <div class="part1">
         <h2 class="help">Still need a hand?</h2>
         <p>Browse our products or ask the Sunny Socks community.</p>
@@ -86,7 +86,7 @@
         <a class="butt1" href="#"><h3>Shop socks &rarr;</h3></a>
         <a class="butt2" href="#"><h3>Visit Q&A</h3></a>
         </div>
-    </footer>
+</section>
 
 </body>
 </html>
