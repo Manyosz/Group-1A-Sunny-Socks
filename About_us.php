@@ -98,9 +98,7 @@
                 <p>Countries Shipped</p>
             </div>
         </section>
-        <footer class="footer-things">
-            <p>The foot</p>
-        </footer>
+        <?php include __DIR__ . '/footer.php'; ?>
     </article>
 </main>
 
