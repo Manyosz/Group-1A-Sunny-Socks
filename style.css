@@ -35,34 +35,130 @@ body{
 
 .hero-page{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
+    align-items: center;
     overflow: hidden;
-    background-image: url(/images/welcome-friends.jpg);
-    height: 700px;
+    background-image:
+    radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0.05) 20%,
+        rgba(0, 0, 0, 0.55) 100%
+    ),
+    url("/images/welcome-friends.jpg");
+    height: 758px;
     background-size: cover;
     background-position: center;
+    text-align: center;
+    h1{
+      font-size: 172px;
+      color: var(--white);
+    }
     p{
-        justify-self: center;
+      color: var(--white);
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .home-yellow-text{
+      color: rgb(245, 166, 35);
     }
 }
-
-.home-discount{
-    border: 1px solid black;
-    justify-self: center;
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
 }
 
-.home-category{
-    border: 1px solid black;
+.hero-buttons a {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 14px 28px;
+    border-radius: 38px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.hero-buttons .home-shop-button {
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+}
+
+.home-story-button {
+    background-color: transparent;
+    color: white;
+}
+
+/* Both move upwards on hover */
+.hero-buttons a:hover {
+    transform: translateY(-4px);
+}
+
+/* Transparent grey on hover */
+.home-story-button:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.home-discount-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.home-discount{
+  display: flex;
+  justify-content: center;
+  background-color: #f15b39;
+  width: 1250px;
+  border-radius: 20px;
+  p{
+    color: var(--white);
+    font-weight: 700;
+  }
+}
+
+.home-categories-section{
+  display: flex;
+  justify-content: center;
+}
+
+.home-categories{
+  width: 1250px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.category-heading {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
 .home-category-cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
     border: 1px solid black;
     .home-category-card{
         border: 1px solid black;
+        overflow: hidden;
+        height: 150px;
+    }
+    img{
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 }
 
@@ -220,7 +316,8 @@ body{
   font-weight: 700;
   line-height: 1.5;
   text-decoration: none;
-  a:hover{
+  &:hover{
+    color: #f2c01c;
     text-decoration: underline;
   }
 }
@@ -247,6 +344,12 @@ body{
   align-items: center;
   gap: 8px;
   margin-bottom: 6px;
+  &:hover {
+    text-decoration: none;
+      .footer-icon {
+        transform: translateY(-3px); /* Move logo up */
+    }
+  }
 }
 
 .footer-icon {
@@ -260,6 +363,7 @@ body{
   background: rgb(193 222 255 / 18%);
   color: #fff;
   font-size: 18px;
+  transition: transform 0.35s ease; /* Smooth movement */
 }
 
 /* Copyright row */
