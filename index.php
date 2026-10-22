@@ -38,23 +38,54 @@ have to copy paste it on every page and if we change it, it will automatically c
         </div>
     </section>
 
-    <section>
-        <div class="home-category">
-            <p>Shop by Category</p>
-            <p>View all→</p>
+    <section class="home-categories-section">
+        <div class="home-categories">
+            <div class="category-heading">
+                <p>Shop by Category</p>
+                <a href="Shop-page-collections.html">View all→</a>
+            </div>
+
             <div class="home-category-cards">
                 <div class="home-category-card">
-                    box1
+                    <a href="Shop-page-collections.html">
+                        <img src="/images/athletic.jpg" alt="Athletic Socks">
+                    </a> <!-- Here it need to go to the athletic styles in the shop page-->
+                <div class="home-category-details">
+                    <p>Athletic</p>
+                    <p>5 styles →</p>
                 </div>
+                </div>
+
                 <div class="home-category-card">
-                    box2
+                    <a href="Shop-page-collections.html">
+                        <img src="/images/no-show-tab.jpg" alt="Casual Socks">
+                    </a> <!-- Here it need to go to the casual styles in the shop page-->
+                <div class="home-category-details">
+                    <p>Casual</p>
+                    <p>7 styles →</p>
                 </div>
+                </div>
+
                 <div class="home-category-card">
-                    box3
+                    <a href="Shop-page-collections.html">
+                        <img src="/images/hiking.jpg" alt="Hiking Socks">
+                    </a> <!-- Here it need to go to the hiking styles in the shop page-->
+                <div class="home-category-details">
+                    <p>Hiking</p>
+                    <p>3 styles →</p>
                 </div>
+                </div>
+
                 <div class="home-category-card">
-                    box4
+                    <a href="Shop-page-collections.html">
+                        <img src="/images/cozy.jpg" alt="Cozy Socks">
+                    </a> <!-- Here it need to go to the cozy styles in the shop page-->
+                <div class="home-category-details">
+                    <p>Cozy</p>
+                    <p>10 styles →</p>
                 </div>
+                </div>
+
             </div>
         </div>
     </section>
