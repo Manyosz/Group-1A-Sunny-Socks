@@ -105,11 +105,26 @@ body{
     background-color: rgba(200, 200, 200, 0.3);
 }
 
+.home-discount-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
-.home-discount{
-    border: 1px solid black;
-    justify-self: center;
 }
+.home-discount{
+  display: flex;
+  justify-content: center;
+  background-color: #f15b39;
+  width: 1250px;
+  border-radius: 20px;
+  p{
+    color: var(--white);
+    font-weight: 700;
+  }
+}
+
+
 
 .home-category{
     border: 1px solid black;
@@ -279,7 +294,8 @@ body{
   font-weight: 700;
   line-height: 1.5;
   text-decoration: none;
-  a:hover{
+  &:hover{
+    color: #f2c01c;
     text-decoration: underline;
   }
 }
@@ -306,6 +322,12 @@ body{
   align-items: center;
   gap: 8px;
   margin-bottom: 6px;
+  &:hover {
+    text-decoration: none;
+      .footer-icon {
+        transform: translateY(-3px); /* Move logo up */
+    }
+  }
 }
 
 .footer-icon {
@@ -319,6 +341,7 @@ body{
   background: rgb(193 222 255 / 18%);
   color: #fff;
   font-size: 18px;
+  transition: transform 0.35s ease; /* Smooth movement */
 }
 
 /* Copyright row */

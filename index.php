@@ -32,7 +32,7 @@ have to copy paste it on every page and if we change it, it will automatically c
         </div>
     </section>
 
-    <section>
+    <section class="home-discount-section">
         <div class="home-discount">
             <p>☀️ FREE SHIPPING OVER $45 • CODE: SUNNYSOCKS2026</p>
         </div>
