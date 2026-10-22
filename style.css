@@ -76,6 +76,209 @@ body{
         border: 1px solid black;
     }
 }
+
+
+.home-footer {
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 40px);
+  max-width: 1250px;
+  margin: 32px auto 16px;
+  border-radius: 24px;
+  color: #e5dfff;
+  font-family: "Nunito", sans-serif;
+
+  background:
+    radial-gradient(
+      circle,
+      rgb(225 215 255 / 20%) 1.5px,
+      transparent 2px
+    ) 0 0 / 22px 22px,
+    radial-gradient(
+      ellipse at 0% 25%,
+      rgb(242 121 167 / 32%),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 95% 30%,
+      rgb(255 215 90 / 25%),
+      transparent 36%
+    ),
+    radial-gradient(
+      ellipse at 60% 100%,
+      rgb(49 211 195 / 28%),
+      transparent 40%
+    ),
+    #203f77;
+}
+
+/* Rainbow strip */
+.home-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+
+  background: repeating-linear-gradient(
+    45deg,
+    #ffd442 0 14px,
+    #ff70ad 14px 28px,
+    #42cdbc 28px 42px,
+    #9878f5 42px 56px
+  );
+}
+
+/* Newsletter */
+.footer-newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 36px 32px 26px;
+  h2{
+    margin: 0 0 6px;
+    color: #ffd83e;
+    font-family: "Fredoka", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  p{
+    margin: 0;
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+
+/* Email form */
+.footer-form {
+  display: flex;
+  flex: 0 1 420px;
+  gap: 8px;
+  input{
+    flex: 1;
+    min-width: 0;
+    height: 42px;
+    border: 1px solid #dce2ec;
+    border-radius: 13px;
+    padding: 0 16px;
+    background: #fff;
+    color: #203f77;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  input::placeholder{
+    color: #9cabc0;
+    opacity: 1;
+  }
+  button{
+    border: 0;
+    border-radius: 13px;
+    padding: 0 20px;
+    background: #ff5935;
+    color: #fff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover{
+    background: #ed4826;
+  }
+  :is(a, input, button):focus-visible{
+    outline: 3px solid #ffd83e;
+    outline-offset: 4px;
+  }
+}
+
+/* Link columns */
+.home-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  padding: 22px 32px 24px;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+.sunny-column h3 {
+  margin: 0 0 12px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sunny-column a {
+  display: block;
+  width: fit-content;
+  margin: 0 0 8px;
+  color: #e5dfff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.footer-yellow {
+  color: #ffd83e;
+}
+
+.footer-pink {
+  color: #ff83b9;
+}
+
+.footer-mint {
+  color: #7ce5bd;
+}
+
+.footer-blue {
+  color: #98e7fa;
+}
+
+/* Social links */
+.sunny-socials a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 9px;
+  background: rgb(193 222 255 / 18%);
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Copyright row */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 32px;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+  color: #aac0de;
+  font-size: 12px;
+  font-weight: 700;
+  p{
+    margin: 0;
+  }
+}
+
+
 /* Shop Page CSS */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
 

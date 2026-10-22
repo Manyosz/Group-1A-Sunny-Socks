@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/Favicon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <title>Sunny Socks</title>
 </head>
 <body>
@@ -14,41 +16,9 @@ have to copy paste it on every page and if we change it, it will automatically c
          USE THIS!--> 
 
 <!-- Menu bar -->
-    <header class="header">
-            <img src="/images/sunny-socks-logo.png" alt="Sunny Socks logo">
-            <div class="header-page">
-                <p>Home</p>
-                <p>Shop</p>
-                <p>Order</p>
-                <p>About</p>
-            </div>
+ 
+<?php include __DIR__ . '/header.php'; ?>
 
-            <!-- Also needs some php to be able to count the items and also animations -->
-            <div class="header-button">
-                <a href="#">
-                    <span>🛒</span>
-                    <p>Basket</p>
-                    <span>0</span>
-                </a>
-
-                <a href="#">
-                    <span>🌙</span>
-                </a>
-    <!-- language change -->
-                <details>
-                    <!-- here it need a php or something to be able to change it -->
-                    <summary>🌐 EN</summary>
-                    <p>🇬🇧 English</p>
-                    <p>🇳🇱 Nederlands</p>
-                </details>
-
-                <!-- Searchbar pop up -->
-                <details>
-                    <summary>🔍 Search</summary>
-                </details>
-
-            </div>
-    </header>
 
 <!-- hero image section -->
     <section>
@@ -121,16 +91,16 @@ have to copy paste it on every page and if we change it, it will automatically c
         </div>
     </section>
 
-<!-- Footer -->
 
-<!-- <?php include __DIR__ . '/footer.php'; ?>  
+<!-- < ?php include __DIR__ . '/footer.php'; ?>  
 this will include the footer for every html page and we don't
 have to copy paste it on every page and if we change it, it will automatically change in every page so 
          USE THIS!--> 
 
-    <footer>
+<!-- Footer -->
+ 
+<?php include __DIR__ . '/footer.php'; ?>
 
-    </footer>
 
 </body>
 </html>
