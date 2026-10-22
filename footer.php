@@ -30,15 +30,15 @@
 
     <div class="sunny-column">
       <h3 class="footer-pink">Help</h3>
-      <a href="/sizing">Sizing Guide</a>
-      <a href="/returns">Returns</a>
-      <a href="/shipping">Shipping</a>
-      <a href="/faq">FAQ</a>
+      <a href="/SizingGuide.php">Sizing Guide</a>
+      <a href="/Returns.php">Returns</a>
+      <a href="/Shipping.php">Shipping</a>
+      <a href="/FAQ.php">FAQ</a>
     </div>
 
     <div class="sunny-column">
       <h3 class="footer-mint">Company</h3>
-      <a href="/about">About</a>
+      <a href="/About_us.php">About</a>
       <a href="/sustainability">Sustainability</a>
       <a href="/wholesale">Wholesale</a>
       <a href="/press">Press</a>
