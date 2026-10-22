@@ -1,6 +1,6 @@
 <!-- Menu bar -->
     <header class="header">
-            <img src="/images/sunny-socks-logo.png" alt="Sunny Socks logo">
+            <img src="/images/Sunny_Socks-logo.png" alt="Sunny Socks logo">
             <div class="header-page">
                 <p>Home</p>
                 <p>Shop</p>
