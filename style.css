@@ -620,9 +620,10 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 0 12px;
+    
 
     margin: 0;
-    background-color: #FFFBF5;
+    background-color: #105380;
 }
 
 /* HERO BOX */
@@ -633,19 +634,16 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
     grid-column: 3 / 11;
 
-    border: 2px solid orange;
+    border: 2px solid rgb(161, 64, 180);
     border-radius: 25px;
 
     min-height: 240px;
     margin-top: 105px;
 
-    background-image:
-        radial-gradient(#D9BEA1 1px, transparent 2px),
-        linear-gradient(110deg, #FFF1B0, #FFD5CF);
-
     background-size: 22px 22px, 100% 100%;
 
-    box-shadow: 5px 6px 0 #F9C4B8;
+    box-shadow: 5px 6px 0 #f700ff;
+    
 }
 
 /* DECORATIVE CIRCLES */
@@ -653,7 +651,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 .circle {
     position: absolute;
     border-radius: 50%;
-    background-color: #FFAC8D;
+    background-color: #67126e;
     opacity: 0.35;
     pointer-events: none;
 }
@@ -703,7 +701,10 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     position: relative;
     z-index: 1;
 
-    padding: 30px 80px;
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .headText p,
@@ -718,7 +719,6 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     align-items: center;
     gap: 8px;
 
-    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 900;
     color: #1E407A;
@@ -748,9 +748,9 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     color: #685846;
 }
 
-/* RULER BOX */
+/* EMOJI BOX */
 
-.headText .ruler {
+.headText .emoji {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -823,7 +823,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     height: 39px;
 
     border-radius: 14px;
-    background-color: #F15B39;
+    background-color: #680b4c;
     color: white;
 
     font-family: 'Fredoka', sans-serif;
@@ -851,3 +851,115 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
     margin: 0;
 }
+
+/* FOOTER */
+
+.foot {
+    grid-column: 3 / 11;
+
+    margin-top: 15px;
+    padding: 24px 28px;
+    height: 140px;
+
+    background-color: #17346f;
+    border-radius: 25px;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    background-image:
+        radial-gradient(blue 1px, transparent 2px),
+        linear-gradient(110deg, darkblue);
+
+    background-size: 22px 22px, 100% 100%;
+
+    box-shadow: 5px 6px 0 #F9C4B8;
+}
+.foot p {
+    color: white;
+}
+
+.foot .help {
+    color: gold;
+}
+
+.foot .butt1 {
+    color: white;
+    text-decoration: none;
+    background-color: orangered;
+    border-radius: 20px;
+
+    padding: 0 20px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot .butt2 {
+    color: darkblue;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 0 20px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.foot .part2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.foot .part1 h2 {
+    margin-bottom: 5px;
+}
+
+.foot .part1 p {
+    margin-top: 0;
+}
+
+/* SAME BACKGROUND PATTERN FOR ALL PAGES */
+
+.heroBackground {
+    background-image:
+        radial-gradient(#b336ae 1px, transparent 2px),
+        linear-gradient(110deg, var(--bg-start), var(--bg-end));
+
+    background-size: 22px 22px, 100% 100%;
+}
+
+/* DIFFERENT COLORS FOR EACH PAGE */
+
+.bgSizing {
+    --bg-start: #FFF1B0;
+    --bg-end: #FFD5CF;
+}
+
+.bgReturns {
+    --bg-start: #FFD5CF;
+    --bg-end: #FFF1B0;
+}
+
+.bgShipping {
+    --bg-start: #8fe9ec;
+    --bg-end: #1589e9;
+}
+
+.bgFAQ {
+    --bg-start: #f3bdef;
+    --bg-end: #f07fdd;
+}
+
