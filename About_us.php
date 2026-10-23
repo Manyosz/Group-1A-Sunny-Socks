@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/Favicon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <title>About us</title>
 </head>
 <body class="body-bg-bt">
 <main class="main-pst">
     <div class="navbar-adjust">
       <?php include __DIR__ . '/header.php'; ?>
-
+      
     <article class="article-pst article-bg-bt">
         <section class="story-card section-pst">
             <h1>Our story 🧶</h1>
-            <p>Socks made heart, worn with joy.</p>
+            <p>Socks made with heart, worn with joy.</p>
         </section>
         <section class="who-we-are">
         <div class="who-cap">
@@ -103,6 +105,7 @@
         </section>
         <?php include __DIR__ . '/footer.php'; ?>
     </article>
+
 </main>
 
 </body>
