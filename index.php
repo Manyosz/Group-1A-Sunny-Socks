@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <title>Sunny Socks</title>
 </head>
-<body>
-
+<body class="home-body">
+<div class="home-page-wrapper">
 <!--  < ?php include __DIR__ . '/header.php'; ?>  
 this will include the menu bar for every html page and we don't
 have to copy paste it on every page and if we change it, it will automatically change in every page so 
@@ -51,8 +51,8 @@ have to copy paste it on every page and if we change it, it will automatically c
                         <img src="/images/athletic.jpg" alt="Athletic Socks">
                     </a> <!-- Here it need to go to the athletic styles in the shop page-->
                 <div class="home-category-details">
-                    <p>Athletic</p>
-                    <p>5 styles →</p>
+                    <p id="detail-1">Athletic</p>
+                    <p id="detail-2">5 styles →</p>
                 </div>
                 </div>
 
@@ -61,8 +61,8 @@ have to copy paste it on every page and if we change it, it will automatically c
                         <img src="/images/no-show-tab.jpg" alt="Casual Socks">
                     </a> <!-- Here it need to go to the casual styles in the shop page-->
                 <div class="home-category-details">
-                    <p>Casual</p>
-                    <p>7 styles →</p>
+                    <p id="detail-1">Casual</p>
+                    <p id="detail-2">7 styles →</p>
                 </div>
                 </div>
 
@@ -71,8 +71,8 @@ have to copy paste it on every page and if we change it, it will automatically c
                         <img src="/images/hiking.jpg" alt="Hiking Socks">
                     </a> <!-- Here it need to go to the hiking styles in the shop page-->
                 <div class="home-category-details">
-                    <p>Hiking</p>
-                    <p>3 styles →</p>
+                    <p id="detail-1">Hiking</p>
+                    <p id="detail-2">3 styles →</p>
                 </div>
                 </div>
 
@@ -81,8 +81,8 @@ have to copy paste it on every page and if we change it, it will automatically c
                         <img src="/images/cozy.jpg" alt="Cozy Socks">
                     </a> <!-- Here it need to go to the cozy styles in the shop page-->
                 <div class="home-category-details">
-                    <p>Cozy</p>
-                    <p>10 styles →</p>
+                    <p id="detail-1">Cozy</p>
+                    <p id="detail-2">10 styles →</p>
                 </div>
                 </div>
 
@@ -90,14 +90,77 @@ have to copy paste it on every page and if we change it, it will automatically c
         </div>
     </section>
 
-    <section>
-        <div class="home-bestseller">
-            <div class="home-bestseller-card">
-                box1
+    <section class="home-featured">
+        <div class="home-bestsellers">
+            <div class="home-bestsellers-heading">
+                <h2>🔥 Bestsellers</h2>
+                <a href="Shop-page-collections.html">Shop all →</a>
             </div>
-            <div class="home-order-card">
-                box2
+
+            <div class="home-bestseller-cards">
+                <a class="home-product-card" href="Shop-page-collections.html">
+                    <img src="/images/merino-crew.jpg" alt="Merino Crew socks">
+
+                    <div class="home-product-details">
+                        <h3>Merino Crew</h3>
+                        <span class="home-product-badge">Bestseller</span>
+                        <p class="home-product-price">$18</p>
+
+                        <div class="home-product-sizes">
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="home-product-card" href="Shop-page-collections.html">
+                    <img src="/images/athletic.jpg" alt="Ankle Sport socks">
+
+                    <div class="home-product-details">
+                        <h3>Ankle Sport</h3>
+                        <span class="home-product-badge">New</span>
+                        <p class="home-product-price">$12</p>
+
+                        <div class="home-product-sizes">
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="home-product-card" href="Shop-page-collections.html">
+                    <img src="/images/hiking.jpg" alt="Compression Run socks">
+
+                    <div class="home-product-details">
+                        <h3>Compression Run</h3>
+                        <span class="home-product-badge">Sale</span>
+                        <p class="home-product-price">$24</p>
+
+                        <div class="home-product-sizes">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                    </div>
+                </a>
             </div>
+        </div>
+
+        <div class="home-order-banner">
+            <p class="home-order-label">Sunny Socks Order</p>
+
+            <h2>Good Socks<br>Brighter<br>Days.</h2>
+
+            <p class="home-order-description">
+                Fill in your details and we'll get your socks to you.
+            </p>
+
+            <a class="home-order-link" href="#"> <!-- Here need the order page -->
+                Place an Order →
+            </a>
         </div>
     </section>
 
@@ -134,6 +197,6 @@ have to copy paste it on every page and if we change it, it will automatically c
  
 <?php include __DIR__ . '/footer.php'; ?>
 
-
+</div>
 </body>
 </html>
