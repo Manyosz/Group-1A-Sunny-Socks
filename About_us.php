@@ -8,7 +8,9 @@
 </head>
 <body class="body-bg-bt">
 <main class="main-pst">
+    <div class="navbar-adjust">
       <?php include __DIR__ . '/header.php'; ?>
+
     <article class="article-pst article-bg-bt">
         <section class="story-card section-pst">
             <h1>Our story 🧶</h1>
@@ -97,6 +99,7 @@
                 <h2>12</h2>
                 <p>Countries Shipped</p>
             </div>
+        </div>
         </section>
         <?php include __DIR__ . '/footer.php'; ?>
     </article>
