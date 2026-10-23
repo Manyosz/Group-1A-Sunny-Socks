@@ -24,7 +24,7 @@ body{
     border: 1px solid black;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 50px;
     align-items: center;
 }
