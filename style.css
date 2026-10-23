@@ -12,6 +12,8 @@ body{
     top: 0px;
     height: 80px;
     width: 100%;
+    background-color: var(--butter-yellow);
+    border-radius: 40px 40px 0 0;
     img{
         width: 140px;
         
@@ -491,6 +493,14 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     box-sizing: border-box;
 }
 
+.navbar_adjust header.header {
+    display: flex;
+    max-width: 80%;
+    max-height: 100px;
+    padding: 10px;
+    margin: 0;
+    justify-content: space-between;
+}
 
 .article-bg-bt {
     background-image: 
