@@ -451,6 +451,69 @@
 }
 
 
+.home-our-story{
+  display: flex;
+  justify-content: center;
+}
+.home-our-story-content{
+  width: 1250px;
+  height: 370px;
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-top: 30px;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(250, 247, 239, 0.97) 0%,
+      rgba(250, 247, 239, 0.85) 30%,
+      rgba(250, 247, 239, 0.4) 60%,
+      rgba(250, 247, 239, 0) 100%
+    ),
+    url("/images/hanging_socks.jpg");
+  background-size: 100% 100%, 100% auto;
+  background-position: center;     /* Adds the zoom for the picture */
+  background-repeat: no-repeat;
+  transition: background-size 0.7s ease;
+  &:hover{
+    background-size: 100% 100%, 105% auto;  /* Smooth the zoom */
+  }
+
+  .home-our-story-label{
+    color: rgb(138, 138, 138);
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
+  .home-our-story-h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .home-our-story-description{
+    color: #7a6a5a;
+    font-weight: 900;
+    line-height: 25px;
+  }
+  .home-our-story-button{
+    display: inline-flex;
+    text-decoration: none;
+    border: 2px solid #f15b39;
+    background-color: white;
+    border-radius: 15px;
+    padding: 12px 24px;
+    color: #f15b39;
+    font-weight: 900;
+    font-size: 15px;
+    transition: background-color 0.5s ease;
+    &:hover{
+      background-color: #fdefd8;
+    }
+  }
+}
+
+
+
 .home-footer {
   position: relative;
   overflow: hidden;
