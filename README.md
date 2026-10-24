@@ -78,6 +78,7 @@ Created by Group 1A:
 - [VladimirKritsak](https://github.com/VladimirKritsak)
 - [CoderQ178](https://github.com/CoderQ178)
 - [kaylencnm](https://github.com/kaylencnm)
+- [crimi1](https://github.com/crimi1)
 
 ## Contributing
 
