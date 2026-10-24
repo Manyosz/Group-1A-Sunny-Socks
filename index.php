@@ -166,15 +166,21 @@ have to copy paste it on every page and if we change it, it will automatically c
 
 <!-- Our story section -->
 
-    <section>
-        <div class="home-our-story">
-            <p>Sunny Socks About</p>
-            <p>Our Story ☀️</p>
-            <p>We believe everyday things can make a brighter world. 
-                That's why we create high-quality, colourful socks, 
-                produced ethically and with care for people and the planet.</p>
-            <a href="#">
-                <p>Learn More →</p>
+   <section class="home-our-story">
+        <div class="home-our-story-content">
+            <p class="home-our-story-label">Sunny Socks About</p>
+
+            <h2 class="home-our-story-h2">Our Story ☀️</h2>
+
+            <p class="home-our-story-description">
+            We believe everyday things can make a brighter <br>
+            world. That's why we create high-quality, colourful <br>
+            socks, produced ethically and with care for people <br>
+            and the planet.
+            </p>
+
+            <a href="About_us.php" class="home-our-story-button">
+                Learn More →
             </a>
         </div>
     </section>
