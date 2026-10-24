@@ -187,9 +187,27 @@ have to copy paste it on every page and if we change it, it will automatically c
 
 <!-- home info -->
 
-    <section>
-        <div>
+    <section class="home-stats-section">
+        <div class="home-stats">
+            <div class="home-stats-box">
+                <h2>2018</h2>
+                <p>Founded</p>
+            </div>
 
+            <div class="home-stats-box">
+                <h2>40k+</h2>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="home-stats-box">
+                <h2>100%</h2>
+                <p>Merino Certified</p>
+            </div>
+
+            <div class="home-stats-box">
+                <h2>12</h2>
+                <p>Countries Shipped</p>
+            </div>
         </div>
     </section>
 
