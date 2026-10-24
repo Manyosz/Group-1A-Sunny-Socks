@@ -4,12 +4,13 @@ Sunny Socks is a sock shop website created by Group 1A as part of a university p
 
 ## About the website
 
-The website presents a colourful sock brand, with a homepage, a collection page, and customer information pages. It is an educational project under development.
+The website presents a colourful sock brand, with a homepage, a collection page, a planned order page, and customer information pages. It is an educational project under development.
 
 The project includes:
 
 - A homepage with product categories, bestsellers, and the brand story.
 - A shop collection interface with category filters, sorting controls, and a product details dialog.
+- A planned order page where visitors can enter their details and place an order as part of the website demonstration.
 - Customer information pages for frequently asked questions, shipping, returns, and sizing.
 - Shared PHP header and footer files for reuse across pages.
 
