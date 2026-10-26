@@ -1091,7 +1091,9 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     background: var(--navy);
 }
 
-/* Sizing Guide */
+/* ========================================
+   SIZING GUIDE PAGES
+======================================== */
 
 
 
@@ -1102,7 +1104,9 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
    1. PAGE COLOR THEMES
 ======================================== */
 
-/* SIZING GUIDE */
+/* ========================================
+   SIZING GUIDE
+======================================== */
 
 .themeSizing {
     --bg-start: #FFF1B0;
@@ -1125,7 +1129,9 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     --footer-shadow: #F9C4B8;
 }
 
-/* RETURNS */
+/* ========================================
+   RETURNS
+======================================== */
 
 .themeReturns {
     --bg-start: #f6fb93;
@@ -1148,7 +1154,9 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     --footer-shadow: #fcded7;
 }
 
-/* SHIPPING */
+/* ========================================
+   SHIPPING
+======================================== */
 
 .themeShipping {
     --bg-start: #8fe9ec;
@@ -1171,7 +1179,9 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     --footer-shadow: #8fe9ec;
 }
 
-/* FAQ */
+/* ========================================
+   FAQ
+======================================== */
 
 .themeFAQ {
     --bg-start: #f3bdef;
@@ -1194,7 +1204,9 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     --footer-shadow: #F3BDEF;
 }
 
-/* SUSTAINABILITY */
+/* ========================================
+   SUSTAINABILITY
+======================================== */
 
 .themeSustain {
     --bg-start: #d2f9ad;
@@ -1239,15 +1251,14 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 }
 
 
-/* Wholesale page: keep the shared header and footer spanning the whole grid. */
-body.themeWholesale > header.header,
-body.themeWholesale > footer.home-footer {
-    grid-column: 1 / -1;
-    min-width: 0;
-}
+/* ========================================
+   WHOLESALE HEADER AND FOOTER
+======================================== */
 
-body.themeWholesale > header.header {
+.themeWholesale .header {
+    grid-column: 1 / -1;
     width: 100%;
+    min-width: 0;
     min-height: 80px;
     height: auto;
     padding: 10px 24px;
@@ -1257,7 +1268,7 @@ body.themeWholesale > header.header {
     gap: 16px;
 }
 
-body.themeWholesale > header.header > img {
+.themeWholesale .header img {
     width: 140px;
     max-width: 100%;
     height: auto;
@@ -1265,40 +1276,24 @@ body.themeWholesale > header.header > img {
     flex-shrink: 0;
 }
 
-body.themeWholesale > header.header .header-page {
+.themeWholesale .header-page {
     border: 0;
     gap: clamp(12px, 2vw, 40px);
     flex-wrap: wrap;
 }
 
-body.themeWholesale > header.header .header-button {
+.themeWholesale .header-button {
     align-items: center;
     flex-wrap: wrap;
     gap: 14px;
 }
 
-body.themeWholesale > footer.home-footer {
+.themeWholesale .home-footer {
+    grid-column: 1 / -1;
+    min-width: 0;
     width: min(1250px, calc(100% - 40px));
     max-width: 1250px;
     justify-self: center;
-}
-
-@media (max-width: 800px) {
-    body.themeWholesale > footer.home-footer .footer-newsletter {
-        flex-wrap: wrap;
-    }
-    body.themeWholesale > footer.home-footer .home-links {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 520px) {
-    body.themeWholesale > footer.home-footer .home-links {
-        grid-template-columns: 1fr;
-    }
-    body.themeWholesale > footer.home-footer .footer-bottom {
-        flex-wrap: wrap;
-    }
 }
 
 .themePress {
@@ -1383,7 +1378,9 @@ body.themeWholesale > footer.home-footer {
     background-size: 22px 22px, 100% 100%;
 }
 
-/* Also supports your older bgSizing HTML */
+/* ========================================
+   ALSO SUPPORTS YOUR OLDER BGSIZING HTML
+======================================== */
 .headBox.bgSizing {
     background-image:
         radial-gradient(var(--dots, #b336ae) 1px, transparent 2px),
@@ -1476,7 +1473,9 @@ body.themeWholesale > footer.home-footer {
     margin: 0;
 }
 
-/* FIRST LINE */
+/* ========================================
+   FIRST LINE
+======================================== */
 
 .headText .t1 {
     display: flex;
@@ -1493,7 +1492,9 @@ body.themeWholesale > footer.home-footer {
     margin-bottom: 5px;
 }
 
-/* MAIN HEADING */
+/* ========================================
+   MAIN HEADING
+======================================== */
 
 .headText .t2 {
     font-family: 'Fredoka', sans-serif;
@@ -1507,7 +1508,9 @@ body.themeWholesale > footer.home-footer {
     margin-bottom: 14px;
 }
 
-/* DESCRIPTION */
+/* ========================================
+   DESCRIPTION
+======================================== */
 
 .headText .t3 {
     font-family: 'Nunito', sans-serif;
@@ -1519,7 +1522,9 @@ body.themeWholesale > footer.home-footer {
     color: #685846;
 }
 
-/* EMOJI BOX */
+/* ========================================
+   EMOJI BOX
+======================================== */
 
 .headText .emoji {
     display: inline-flex;
@@ -1686,7 +1691,9 @@ body.themeWholesale > footer.home-footer {
 }
 
 
-/* FOOTERCONTACT TEXT */
+/* ========================================
+   FOOTERCONTACT TEXT
+======================================== */
 
 .footContact p {
     color: white;
@@ -1732,7 +1739,9 @@ body.themeWholesale > footer.home-footer {
 }
 
 
-/* FOOTERCONTACT LAYOUT */
+/* ========================================
+   FOOTERCONTACT LAYOUT
+======================================== */
 
 .footContact .part2 {
     display: flex;
@@ -1748,4 +1757,39 @@ body.themeWholesale > footer.home-footer {
 
 .footContact .part1 p {
     margin-top: 0;
+}
+
+/* ========================================
+   INFORMATION PAGES
+======================================== */
+.sizingGuide {
+    display: block;
+    background: linear-gradient(110deg, var(--bg-start), var(--bg-end));
+}
+
+.sizingGuide .header {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    align-items: center;
+}
+
+.sizingGuide .sunny-page {
+    width: 80%;
+    max-width: 1320px;
+    margin: auto;
+    padding: 12px;
+}
+
+.sizingGuide .headBox,
+.sizingGuide .sizes-grid,
+.sizingGuide .footContact {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.sizingGuide .home-footer {
+    width: 80%;
+    max-width: 1250px;
+    margin: 28px auto;
 }
