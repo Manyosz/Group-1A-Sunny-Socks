@@ -1238,6 +1238,69 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     --footer-shadow: #ff8bf7;
 }
 
+
+/* Wholesale page: keep the shared header and footer spanning the whole grid. */
+body.themeWholesale > header.header,
+body.themeWholesale > footer.home-footer {
+    grid-column: 1 / -1;
+    min-width: 0;
+}
+
+body.themeWholesale > header.header {
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+body.themeWholesale > header.header > img {
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+body.themeWholesale > header.header .header-page {
+    border: 0;
+    gap: clamp(12px, 2vw, 40px);
+    flex-wrap: wrap;
+}
+
+body.themeWholesale > header.header .header-button {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+body.themeWholesale > footer.home-footer {
+    width: min(1250px, calc(100% - 40px));
+    max-width: 1250px;
+    justify-self: center;
+}
+
+@media (max-width: 800px) {
+    body.themeWholesale > footer.home-footer .footer-newsletter {
+        flex-wrap: wrap;
+    }
+    body.themeWholesale > footer.home-footer .home-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    body.themeWholesale > footer.home-footer .home-links {
+        grid-template-columns: 1fr;
+    }
+    body.themeWholesale > footer.home-footer .footer-bottom {
+        flex-wrap: wrap;
+    }
+}
+
 .themePress {
     --bg-start: #cbbff5;
     --bg-end: #8953ff;
