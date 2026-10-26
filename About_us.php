@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <title>About us</title>
 </head>
-<body class="body-bg-bt">
+<body class="article-bg-bt">
 <main class="main-pst">
     <div class="navbar-adjust">
       <?php include __DIR__ . '/header.php'; ?>
       
-    <article class="article-pst article-bg-bt">
+    <article class="article-pst article-bg-bt ">
         <section class="story-card section-pst">
             <h1>Our story 🧶</h1>
             <p>Socks made with heart, worn with joy.</p>
@@ -103,7 +103,7 @@
             </div>
         </div>
         </section>
-        <?php include __DIR__ . '/footer.php'; ?>
+         <?php include __DIR__ . '/footer.php'; ?>
     </article>
 
 </main>
