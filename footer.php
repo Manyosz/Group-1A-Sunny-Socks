@@ -39,9 +39,9 @@
     <div class="sunny-column">
       <h3 class="footer-mint">Company</h3>
       <a href="/About_us.php">About</a>
-      <a href="/sustainability">Sustainability</a>
-      <a href="/wholesale">Wholesale</a>
-      <a href="/press">Press</a>
+      <a href="/Sustainability.php">Sustainability</a>
+      <a href="/Wholesale.php">Wholesale</a>
+      <a href="/Press.php">Press</a>
     </div>
 
     <div class="sunny-column sunny-socials">

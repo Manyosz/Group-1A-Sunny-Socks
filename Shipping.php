@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping & Delivery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="sizingGuide">
+<body class="sizingGuide themeShipping">
+
+<?php include __DIR__ . '/header.php'; ?>
+
+<main class="sunny-page article-bg-bt">
 
     <!-- HERO SECTION -->
 
-    <section class="headBox heroBackground bgShipping">
+    <section class="headBox heroBackground">
 
         <div class="headText">
             <p class="t1">
@@ -87,7 +92,7 @@
         </section>
     </div>
 
-    <footer class="foot">
+    <section class="footContact">
         <div class="part1">
         <h2 class="help">Still need a hand?</h2>
         <p>Browse our products or ask the Sunny Socks community.</p>
@@ -97,7 +102,11 @@
         <a class="butt1" href="#"><h3>Shop socks &rarr;</h3></a>
         <a class="butt2" href="#"><h3>Visit Q&A</h3></a>
         </div>
-    </footer>
+</section>
+
+</main>
+
+<?php include __DIR__ . '/footer.php'; ?>
 
 </body>
 </html>
