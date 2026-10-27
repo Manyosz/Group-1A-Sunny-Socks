@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+
+:root {
+  --navy: #17346f;
+  --orange: #f15b3c;
+  --peach: #ffddc8;
+  --peach-line: #ffb39c;
+  --cream: #fff4dc;
+  --yellow: #fff2a8;
+  --pink: #ffd9e7;
+  --mint: #d9f4e7;
+  --white: #fff;
+  --muted: #8b8b8b;
+  --shadow: 0 5px 0 rgba(232, 133, 104, .22);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--navy);
+  font-family: "Nunito Sans", "Trebuchet MS", sans-serif;
+  background:
+    radial-gradient(circle, rgba(255, 157, 132, .34) 1.5px, transparent 1.7px) 0 0 / 15px 15px,
+    linear-gradient(115deg, #fff0a9 0%, #ffe1d5 49%, #ffcddd 100%);
+  min-height: 100vh;
+}
+button, select { font: inherit; }
+button:focus-visible, select:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+.sock-shop-page { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 30px 0 24px; }
+.sock-shop-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding: 4px 4px 22px; }
+.sock-shop-eyebrow { margin: 0 0 5px; color: var(--orange); font-size: 11px; font-weight: 900; letter-spacing: .18em; }
+.sock-shop-main-heading { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight: 900; letter-spacing: -.04em; }
+.sock-shop-intro { margin: 8px 0 0; color: #596a89; font-size: 14px; }
+.sock-shop-item-count { background: rgba(255,255,255,.75); border: 1px solid var(--peach-line); border-radius: 30px; padding: 9px 14px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.sock-shop-filter-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 12px 14px; background: rgba(255, 243, 166, .92);
+  border: 1px solid var(--peach-line); border-radius: 24px; box-shadow: var(--shadow);
+  margin-bottom: 17px;
+}
+.sock-shop-category-list { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.sock-shop-filter-chip {
+  border: 0; border-radius: 30px; padding: 9px 16px; background: #fff;
+  color: #747474; font-size: 11px; text-transform: uppercase; font-weight: 900;
+  box-shadow: 0 2px 3px rgba(48, 48, 48, .08); cursor: pointer; transition: .18s ease;
+}
+.sock-shop-filter-chip:hover { transform: translateY(-1px); }
+.sock-shop-filter-chip.is-active { color: white; background: var(--orange); }
+.sock-shop-sort-wrap { flex: 0 0 auto; }
+.sock-shop-sort-wrap select {
+  appearance: none; cursor: pointer; color: var(--navy); font-size: 12px; font-weight: 900;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2317346f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 13px center;
+  border: 1px solid var(--orange); border-radius: 30px; padding: 12px 36px 12px 16px;
+}
+.sock-shop-product-panel { background: var(--peach); border: 1px solid var(--peach-line); border-radius: 26px; padding: 23px; box-shadow: var(--shadow); }
+.sock-shop-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.sock-shop-product-card { overflow: hidden; border-radius: 23px; background: white; min-width: 0; transition: transform .18s ease, box-shadow .18s ease; }
+.sock-shop-product-card:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(97, 62, 49, .12); }
+.sock-shop-product-image { display: block; width: 100%; aspect-ratio: 1.78 / 1; object-fit: cover; background: #cce7ee; }
+.sock-shop-product-info { padding: 13px 15px 15px; }
+.sock-shop-product-title-line { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sock-shop-product-name { margin: 0; font-size: 13px; font-weight: 900; line-height: 1.35; }
+.sock-shop-product-badge { flex: 0 0 auto; border: 1px solid #ffbfaa; background: #fff6f1; color: var(--orange); border-radius: 20px; padding: 3px 9px; font-size: 8px; letter-spacing: .12em; line-height: 1.2; }
+.sock-shop-product-price { color: var(--orange); font-size: 15px; font-weight: 900; margin: 5px 0 8px; }
+.sock-shop-product-sizes { display: flex; gap: 5px; }
+.sock-shop-product-size { display: inline-grid; place-items: center; min-width: 20px; height: 19px; padding: 0 5px; border-radius: 20px; background: var(--cream); color: var(--orange); font-size: 9px; font-weight: 800; }
+.sock-shop-pagination { display: flex; justify-content: center; gap: 8px; padding: 30px 0 0; }
+.sock-shop-page-button { width: 34px; height: 34px; border: 0; border-radius: 50%; background: #fff; color: #8a8a8a; font-weight: 900; font-size: 12px; cursor: pointer; box-shadow: 0 2px 3px rgba(0,0,0,.08); }
+.sock-shop-page-button.is-active { color: #fff; background: var(--orange); }
+.sock-shop-empty-state { padding: 32px 0; text-align: center; color: #7c6c68; }
+.sock-shop-footer { text-align: center; color: #7a6d78; font-size: 12px; padding-top: 25px; }
+.sock-shop-footer span { color: var(--orange); }
+.sock-shop-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+@media (max-width: 800px) {
+  .sock-shop-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .sock-shop-product-panel { padding: 16px; }
+  .sock-shop-filter-bar { align-items: stretch; flex-direction: column; }
+  .sock-shop-sort-wrap select { width: 100%; }
+}
+@media (max-width: 520px) {
+  .sock-shop-page { width: min(100% - 22px, 440px); padding-top: 18px; }
+  .sock-shop-heading { align-items: start; flex-direction: column; padding-bottom: 17px; }
+  .sock-shop-product-grid { grid-template-columns: 1fr; }
+  .sock-shop-product-image { aspect-ratio: 1.7 / 1; }
+  .sock-shop-filter-bar { padding: 12px; border-radius: 18px; }
+  .sock-shop-category-list { gap: 6px; }
+  .sock-shop-filter-chip { padding: 8px 11px; font-size: 10px; }
+  .sock-shop-product-panel { padding: 12px; border-radius: 20px; }
+}
+
+
+/* Header actions and bag counter */
+.sock-shop-heading-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sock-shop-bag-indicator {
+  background: rgba(255,255,255,.75);
+  border: 1px solid var(--peach-line);
+  border-radius: 30px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* Clickable product cards */
+.sock-shop-product-card {
+  cursor: pointer;
+}
+.sock-shop-product-card:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+}
+.sock-shop-view-details {
+  display: block;
+  margin-top: 8px;
+  color: var(--orange);
+  font-size: 10px;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+.sock-shop-product-card:hover .sock-shop-view-details,
+.sock-shop-product-card:focus-visible .sock-shop-view-details {
+  opacity: 1;
+}
+
+/* Product detail popup */
+.sock-product-detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(34, 29, 42, .58);
+  overflow-y: auto;
+}
+.sock-product-detail-overlay[hidden] {
+  display: none;
+}
+body.sock-product-detail-open {
+  overflow: hidden;
+}
+.sock-product-detail-modal {
+  width: min(720px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f1d5c7;
+  border-radius: 16px;
+  box-shadow: 0 22px 70px rgba(32, 25, 35, .25);
+  color: #343434;
+}
+.sock-product-detail-header {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 20px;
+  border-bottom: 1px solid #f0dfd4;
+  color: #7d7d7d;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .2em;
+}
+.sock-product-detail-close {
+  border: 1px solid #ffd4c4;
+  padding: 7px 11px;
+  color: #333;
+  background: #fff;
+  font-size: 9px;
+  cursor: pointer;
+}
+.sock-product-detail-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 490px;
+  max-height: calc(100vh - 100px);
+}
+.sock-product-detail-image-wrap {
+  min-width: 0;
+  background: #d9eaf0;
+  overflow: hidden;
+}
+.sock-product-detail-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 490px;
+  object-fit: cover;
+}
+.sock-product-detail-content {
+  min-width: 0;
+  overflow-y: auto;
+  padding: 22px;
+}
+.sock-product-detail-labels {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 9px;
+}
+.sock-product-detail-category,
+.sock-product-detail-badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ffc5b1;
+  border-radius: 20px;
+  padding: 4px 8px;
+  color: var(--orange);
+  background: #fff5f0;
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.sock-product-detail-name {
+  margin: 0;
+  color: #303030;
+  font-size: 23px;
+  line-height: 1.18;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.sock-product-detail-price {
+  margin: 6px 0 2px;
+  color: #303030;
+  font-size: 19px;
+  font-weight: 800;
+}
+.sock-product-detail-material {
+  margin: 0 0 18px;
+  color: #999;
+  font-size: 9px;
+}
+.sock-product-detail-description {
+  margin: 0 0 18px;
+  color: #626262;
+  font-size: 10.5px;
+  line-height: 1.75;
+}
+.sock-product-detail-features-heading,
+.sock-product-detail-size-heading {
+  margin: 0 0 8px;
+  color: #929292;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .17em;
+}
+.sock-product-detail-features {
+  list-style: none;
+  margin: 0 0 21px;
+  padding: 0;
+}
+.sock-product-detail-features li {
+  position: relative;
+  padding-left: 13px;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 10px;
+  line-height: 1.3;
+}
+.sock-product-detail-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 5px;
+  height: 5px;
+  background: var(--orange);
+}
+.sock-product-detail-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 19px;
+}
+.sock-product-detail-size-option {
+  min-width: 37px;
+  height: 37px;
+  padding: 0 10px;
+  border: 1px solid #e8d6ca;
+  border-radius: 8px;
+  background: #fff;
+  color: #3f3f3f;
+  font-size: 9px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.sock-product-detail-size-option.is-selected {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: #fff;
+}
+.sock-product-detail-add-to-bag {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 14px;
+  background: var(--orange);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.sock-product-detail-add-to-bag:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+.sock-product-detail-size-message {
+  min-height: 12px;
+  margin: 8px 0 0;
+  color: #999;
+  text-align: center;
+  font-size: 8px;
+}
+
+@media (max-width: 620px) {
+  .sock-product-detail-overlay {
+    padding: 12px;
+    align-items: start;
+  }
+  .sock-product-detail-modal {
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+  }
+  .sock-product-detail-main {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+  .sock-product-detail-image {
+    height: 230px;
+    min-height: 230px;
+    max-height: 230px;
+  }
+  .sock-product-detail-content {
+    overflow: visible;
+    padding: 20px;
+  }
+  .sock-shop-view-details {
+    opacity: 1;
+  }
+}
