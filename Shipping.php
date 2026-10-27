@@ -8,45 +8,6 @@
     <title>Shipping & Delivery</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <style>
-        /* Only this page: use the same layout as About Us. */
-        body.sizingGuide {
-            display: block;
-            background: linear-gradient(110deg, #C378D5, #A979E9, #6D9FE8);
-        }
-
-        .header {
-            width: 100%;
-            max-width: 1320px;
-            margin: auto;
-            align-items: center;
-        }
-
-        .sunny-page {
-            width: 80%;
-            max-width: 1320px;
-            margin: auto;
-            padding: 12px;
-        }
-
-        .sunny-page .headBox,
-        .sunny-page .sizes-grid,
-        .sunny-page .footContact {
-            width: 100%;
-            margin-top: 12px;
-        }
-
-        .home-footer {
-            width: 80%;
-            max-width: 1250px;
-            margin: 28px auto;
-        }
-
-        @media (max-width: 700px) {
-            .sunny-page, .home-footer { width: 95%; }
-            .sunny-page .sizes-grid { grid-template-columns: 1fr; }
-        }
-    </style>
 </head>
 
 <body class="sizingGuide themeShipping">
