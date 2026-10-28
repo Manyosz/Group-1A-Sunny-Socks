@@ -5,14 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sizing Guide</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="sizingGuide themeFAQ">
+<body class="sizingGuide themeSizing">
 
-<?php include __DIR__ . '/header.php'; ?>
+<div class="info-header">
+<?php include __DIR__ . '/../../header.php'; ?>
+</div>
 
 <main class="sunny-page article-bg-bt">
 
@@ -22,16 +24,17 @@
 
         <div class="headText">
             <p class="t1">
-                <span class="emoji">💬</span>
+                <span class="emoji">📏</span>
                 Help Sizing Guide
             </p>
 
             <h1 class="t2">
-                Help FAQ Frequently Asked Questions 💬
+                Find Your Perfect Fit 📏
             </h1>
 
             <p class="t3">
-                 Quick answers about products, care, ordering, and delivery.
+                Use your everyday shoe size to choose the
+                Sunny Socks size that feels best.
             </p>
         </div>
 
@@ -51,9 +54,10 @@
             <span class="number">1</span>
 
             <div class="cardText">
-                <h2>Standard delivery</h2>
+                <h2>Small EU 35–38</h2>
                 <p>
-                    Most domestic orders arrive in 3–5 business days.
+                    A comfortable fit for smaller adult
+                    feet and most teens.
                 </p>
             </div>
         </section>
@@ -62,9 +66,10 @@
             <span class="number">2</span>
 
             <div class="cardText">
-                <h2>How should I wash my socks?</h2>
+                <h2>Medium EU 39–42</h2>
                 <p>
-                     Machine wash cold with similar colours. Air drying gives your socks the longest life.
+                    A great everyday fit for average
+                    adult shoe sizes.
                 </p>
             </div>
         </section>
@@ -73,9 +78,10 @@
             <span class="number">3</span>
 
             <div class="cardText">
-                <h2> Are the socks unisex?</h2>
+                <h2>Large EU 43–46</h2>
                 <p>
-                    Yes. Our sizing is based on shoe size, so anyone can find the right fit.
+                    A roomy, comfortable fit for
+                    larger feet.
                 </p>
             </div>
         </section>
@@ -84,29 +90,35 @@
             <span class="number">4</span>
 
             <div class="cardText">
-                <h2>Where are the socks made?</h2>
+                <h2>Extra Large EU 47+</h2>
                 <p>
-                    Our socks are made by certified ethical manufacturing partners using carefully sourced materials.
+                    Extra space for an easy and
+                    comfortable fit.
                 </p>
             </div>
         </section>
+
     </div>
 
     <section class="footContact">
         <div class="part1">
-        <h2 class="help">Still need a hand?</h2>
-        <p>Browse our products or ask the Sunny Socks community.</p>
+            <h2 class="help">Still need a hand?</h2>
+            <p>Browse our products or ask the Sunny Socks community.</p>
         </div>
 
         <div class="part2">
-        <a class="butt1" href="#"><h3>Shop socks &rarr;</h3></a>
-        <a class="butt2" href="#"><h3>Visit Q&A</h3></a>
+            <a class="butt1" href="#">
+                <h3>Shop socks &rarr;</h3>
+            </a>
+            <a class="butt2" href="#">
+                <h3>Visit Q&A</h3>
+            </a>
         </div>
 </section>
 
 </main>
 
-<?php include __DIR__ . '/footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>
 
 </body>
 </html>

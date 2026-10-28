@@ -1,18 +1,20 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping & Delivery</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="sizingGuide themeShipping">
+<body class="sizingGuide themeFAQ">
 
-<?php include __DIR__ . '/header.php'; ?>
+<div class="info-header">
+<?php include __DIR__ . '/../../header.php'; ?>
+</div>
 
 <main class="sunny-page article-bg-bt">
 
@@ -22,16 +24,16 @@
 
         <div class="headText">
             <p class="t1">
-                <span class="emoji">📦</span>
-                Help Sizing Guide
+                <span class="emoji">💬</span>
+                Hulp Maattabel
             </p>
 
             <h1 class="t2">
-                Help Shipping Shipping & Delivery 📦
+                Hulp FAQ Veelgestelde vragen 💬
             </h1>
 
             <p class="t3">
-                We carefully pack every order and ship to more than 12 countries.
+                 Snelle antwoorden over producten, onderhoud, bestellen en bezorgen.
             </p>
         </div>
 
@@ -51,9 +53,9 @@
             <span class="number">1</span>
 
             <div class="cardText">
-                <h2>Standard delivery</h2>
+                <h2>Standaardbezorging</h2>
                 <p>
-                    Most domestic orders arrive in 3–5 business days.
+                    De meeste binnenlandse bestellingen worden binnen 3–5 werkdagen bezorgd.
                 </p>
             </div>
         </section>
@@ -62,9 +64,9 @@
             <span class="number">2</span>
 
             <div class="cardText">
-                <h2>International delivery</h2>
+                <h2>Hoe moet ik mijn sokken wassen?</h2>
                 <p>
-                    International orders usually arrive in 7–14 business days.
+                     Was ze koud in de wasmachine met vergelijkbare kleuren. Laat je sokken aan de lucht drogen, zodat ze langer meegaan.
                 </p>
             </div>
         </section>
@@ -73,9 +75,9 @@
             <span class="number">3</span>
 
             <div class="cardText">
-                <h2>Free shipping</h2>
+                <h2> Zijn de sokken uniseks?</h2>
                 <p>
-                    Standard shipping is free when your order total is over $45.
+                    Ja. Onze maten zijn gebaseerd op schoenmaten, zodat iedereen de juiste pasvorm kan vinden.
                 </p>
             </div>
         </section>
@@ -84,9 +86,9 @@
             <span class="number">4</span>
 
             <div class="cardText">
-                <h2>Tracking</h2>
+                <h2>Waar worden de sokken gemaakt?</h2>
                 <p>
-                    A tracking link is emailed as soon as your parcel leaves our studio.
+                    Onze sokken worden gemaakt door gecertificeerde, verantwoord werkende productiepartners met zorgvuldig geselecteerde materialen.
                 </p>
             </div>
         </section>
@@ -94,19 +96,19 @@
 
     <section class="footContact">
         <div class="part1">
-        <h2 class="help">Still need a hand?</h2>
-        <p>Browse our products or ask the Sunny Socks community.</p>
+        <h2 class="help">Nog hulp nodig?</h2>
+        <p>Bekijk onze producten of stel je vraag aan de Sunny Socks-community.</p>
         </div>
 
         <div class="part2">
-        <a class="butt1" href="#"><h3>Shop socks &rarr;</h3></a>
-        <a class="butt2" href="#"><h3>Visit Q&A</h3></a>
+        <a class="butt1" href="#"><h3>Shop sokken &rarr;</h3></a>
+        <a class="butt2" href="#"><h3>Bekijk de veelgestelde vragen</h3></a>
         </div>
 </section>
 
 </main>
 
-<?php include __DIR__ . '/footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>
 
 </body>
 </html>
