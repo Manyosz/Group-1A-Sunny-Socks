@@ -1087,6 +1087,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    SIZING GUIDE PAGES
+======================================== */
 
 
 
@@ -1095,9 +1096,11 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    1. PAGE COLOR THEMES
+======================================== */
 
 /* ========================================
    SIZING GUIDE
+======================================== */
 
 .themeSizing {
     --bg-start: #FFF1B0;
@@ -1122,6 +1125,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    RETURNS
+======================================== */
 
 .themeReturns {
     --bg-start: #f6fb93;
@@ -1146,6 +1150,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    SHIPPING
+======================================== */
 
 .themeShipping {
     --bg-start: #8fe9ec;
@@ -1170,6 +1175,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    FAQ
+======================================== */
 
 .themeFAQ {
     --bg-start: #f3bdef;
@@ -1194,6 +1200,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    SUSTAINABILITY
+======================================== */
 
 .themeSustain {
     --bg-start: #d2f9ad;
@@ -1240,6 +1247,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    WHOLESALE HEADER AND FOOTER
+======================================== */
 
 .themeWholesale .header {
     grid-column: 1 / -1;
@@ -1306,6 +1314,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    2. PAGE LAYOUT
+======================================== */
 
 .sizingGuide {
     display: grid;
@@ -1324,6 +1333,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    3. HERO BOX
+======================================== */
 
 .headBox {
     position: relative;
@@ -1345,6 +1355,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    4. HERO BACKGROUND
+======================================== */
 
 .heroBackground {
     background-image:
@@ -1363,6 +1374,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    ALSO SUPPORTS YOUR OLDER BGSIZING HTML
+======================================== */
 .headBox.bgSizing {
     background-image:
         radial-gradient(var(--dots, #b336ae) 1px, transparent 2px),
@@ -1374,6 +1386,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    5. DECORATIVE CIRCLES
+======================================== */
 
 .circle {
     position: absolute;
@@ -1412,6 +1425,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    6. COLORFUL BOTTOM LINE
+======================================== */
 
 .colorful-line {
     position: absolute;
@@ -1434,6 +1448,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    7. HERO TEXT
+======================================== */
 
 .headText {
     position: relative;
@@ -1454,6 +1469,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    FIRST LINE
+======================================== */
 
 .headText .t1 {
     display: flex;
@@ -1472,6 +1488,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    MAIN HEADING
+======================================== */
 
 .headText .t2 {
     font-family: 'Fredoka', sans-serif;
@@ -1487,6 +1504,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    DESCRIPTION
+======================================== */
 
 .headText .t3 {
     font-family: 'Nunito', sans-serif;
@@ -1500,6 +1518,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    EMOJI BOX
+======================================== */
 
 .headText .emoji {
     display: inline-flex;
@@ -1522,6 +1541,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    8. GRID CONTAINING FOUR CARDS
+======================================== */
 
 .sizes-grid {
     grid-column: 3 / 11;
@@ -1536,6 +1556,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    9. SHARED CARD STYLING
+======================================== */
 
 .size-card {
     display: flex;
@@ -1555,6 +1576,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    10. INDIVIDUAL CARD COLORS
+======================================== */
 
 .sub1 {
     background-color: var(--card1);
@@ -1575,6 +1597,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    11. NUMBER SQUARES
+======================================== */
 
 .number {
     display: flex;
@@ -1599,6 +1622,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    12. CARD TEXT
+======================================== */
 
 .cardText h2 {
     font-family: 'Fredoka', sans-serif;
@@ -1624,6 +1648,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    13. FOOTERCONTACT
+======================================== */
 
 .footContact {
     grid-column: 3 / 11;
@@ -1662,6 +1687,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    FOOTERCONTACT TEXT
+======================================== */
 
 .footContact p {
     color: white;
@@ -1674,6 +1700,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    14. FOOTERCONTACT BUTTONS
+======================================== */
 
 .footContact .butt1 {
     color: white;
@@ -1708,6 +1735,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    FOOTERCONTACT LAYOUT
+======================================== */
 
 .footContact .part2 {
     display: flex;
@@ -1727,23 +1755,38 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 /* ========================================
    INFORMATION PAGES
+======================================== */
 .sizingGuide {
     display: block;
-    background: linear-gradient(110deg, var(--bg-start), var(--bg-end));
+    background-image:
+        radial-gradient(circle, rgba(255, 191, 89, 0.72) 1.6px, transparent 1.8px),
+        linear-gradient(110deg, #fff0b5 0%, #ffe5d7 53%, #ffdce5 100%);
+    background-size: 24px 24px, 100% 100%;
 }
 
-.sizingGuide .header {
+.sizingGuide .info-header {
+    width: 83vw;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.sizingGuide .info-header .header {
     width: 100%;
-    max-width: 1320px;
-    margin: auto;
+    max-width: none;
+    margin: 0;
+    position: static;
     align-items: center;
 }
 
 .sizingGuide .sunny-page {
-    width: 80%;
-    max-width: 1320px;
+    width: 83vw;
+    max-width: 1250px;
     margin: auto;
     padding: 12px;
+    background: transparent;
 }
 
 .sizingGuide .headBox,
@@ -1754,7 +1797,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 }
 
 .sizingGuide .home-footer {
-    width: 80%;
+    width: 83vw;
     max-width: 1250px;
     margin: 28px auto;
 }

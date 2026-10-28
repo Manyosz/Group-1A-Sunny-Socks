@@ -1,18 +1,20 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainability</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sizing Guide</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="sizingGuide themeSustain">
+<body class="sizingGuide themeReturns">
 
-<?php include __DIR__ . '/header.php'; ?>
+<div class="info-header">
+<?php include __DIR__ . '/../../header.php'; ?>
+</div>
 
 <main class="sunny-page article-bg-bt">
 
@@ -22,16 +24,16 @@
 
         <div class="headText">
             <p class="t1">
-                <span class="emoji">🌿</span>
-                Company Sustainability Brighter Socks
+                <span class="emoji">↩️</span>
+                Hulp Maattabel
             </p>
 
             <h1 class="t2">
-                Brighter Socks, Lighter Footprint 🌿
+                ↩️ Hulp Retourneren Eenvoudig retourneren
             </h1>
 
             <p class="t3">
-                We make colourful essentials with respect for people, materials, and the planet.
+                Van gedachten veranderd? Ongedragen sokken in de originele verpakking kun je binnen 30 dagen retourneren.
             </p>
         </div>
 
@@ -51,9 +53,9 @@
             <span class="number">1</span>
 
             <div class="cardText">
-                <h2>Better materials</h2>
+                <h2>Een retour starten</h2>
                 <p>
-                    We prioritise certified merino wool, durable fibres, and natural cotton blends.
+                    Neem contact met ons op met je bestelnummer en het artikel dat je wilt retourneren.
                 </p>
             </div>
         </section>
@@ -62,9 +64,9 @@
             <span class="number">2</span>
 
             <div class="cardText">
-                <h2>Ethical production</h2>
+                <h2>Pak je artikelen in</h2>
                 <p>
-                    We partner only with factories that meet clear standards for fair and safe working conditions.
+                    Zorg dat de producten ongedragen, ongewassen en in de originele verpakking zijn.
                 </p>
             </div>
         </section>
@@ -73,9 +75,9 @@
             <span class="number">3</span>
 
             <div class="cardText">
-                <h2>Less waste</h2>
+                <h2>Terugbetaling</h2>
                 <p>
-                    Our packaging is recycled, recyclable, and plastic-free, and we produce in considered batches.
+                    Na controle wordt het bedrag binnen 5–7 werkdagen teruggestort via de oorspronkelijke betaalmethode.
                 </p>
             </div>
         </section>
@@ -83,19 +85,19 @@
 
     <section class="footContact">
         <div class="part1">
-        <h2 class="help">Still need a hand?</h2>
-        <p>Browse our products or ask the Sunny Socks community.</p>
+        <h2 class="help">Nog hulp nodig?</h2>
+        <p>Bekijk onze producten of stel je vraag aan de Sunny Socks-community.</p>
         </div>
 
         <div class="part2">
-        <a class="butt1" href="#"><h3>Shop socks &rarr;</h3></a>
-        <a class="butt2" href="#"><h3>Visit Q&A</h3></a>
+        <a class="butt1" href="#"><h3>Shop sokken &rarr;</h3></a>
+        <a class="butt2" href="#"><h3>Bekijk de veelgestelde vragen</h3></a>
         </div>
 </section>
 
 </main>
 
-<?php include __DIR__ . '/footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>
 
 </body>
 </html>

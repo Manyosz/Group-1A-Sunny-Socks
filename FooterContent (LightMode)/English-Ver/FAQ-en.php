@@ -5,35 +5,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wholesale</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="sizingGuide themeWholesale">
+<body class="sizingGuide themeFAQ">
 
-<?php include __DIR__ . '/header.php'; ?>
+<div class="info-header">
+<?php include __DIR__ . '/../../header.php'; ?>
+</div>
 
 <main class="sunny-page article-bg-bt">
 
     <!-- HERO SECTION -->
-     
-    
 
     <section class="headBox heroBackground">
 
         <div class="headText">
             <p class="t1">
-                <span class="emoji">🛍️</span>
-                Company Sustainability Brighter Socks
+                <span class="emoji">💬</span>
+                Help Sizing Guide
             </p>
 
             <h1 class="t2">
-               Company Wholesale Stock Sunny Socks 🧦
+                Help FAQ Frequently Asked Questions 💬
             </h1>
 
             <p class="t3">
-                Bring colourful, thoughtfully made socks to your shop, studio, or hotel.
+                 Quick answers about products, care, ordering, and delivery.
             </p>
         </div>
 
@@ -53,9 +53,9 @@
             <span class="number">1</span>
 
             <div class="cardText">
-                <h2>For independent retailers</h2>
+                <h2>Standard delivery</h2>
                 <p>
-                    Flexible opening orders and mixed-size packs make it easy to try the collection.
+                    Most domestic orders arrive in 3–5 business days.
                 </p>
             </div>
         </section>
@@ -64,9 +64,9 @@
             <span class="number">2</span>
 
             <div class="cardText">
-                <h2>Seasonal collections</h2>
+                <h2>How should I wash my socks?</h2>
                 <p>
-                    Retail partners receive early access to new colours, limited drops, and restocks.
+                     Machine wash cold with similar colours. Air drying gives your socks the longest life.
                 </p>
             </div>
         </section>
@@ -75,9 +75,20 @@
             <span class="number">3</span>
 
             <div class="cardText">
-                <h2>Get in touch</h2>
+                <h2> Are the socks unisex?</h2>
                 <p>
-                    Send us your store name, location, and a little about your customers to request our line sheet.
+                    Yes. Our sizing is based on shoe size, so anyone can find the right fit.
+                </p>
+            </div>
+        </section>
+
+        <section class="size-card sub4">
+            <span class="number">4</span>
+
+            <div class="cardText">
+                <h2>Where are the socks made?</h2>
+                <p>
+                    Our socks are made by certified ethical manufacturing partners using carefully sourced materials.
                 </p>
             </div>
         </section>
@@ -97,7 +108,7 @@
 
 </main>
 
-<?php include __DIR__ . '/footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>
 
 </body>
 </html>
