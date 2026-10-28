@@ -103,7 +103,7 @@ if ($sockShopProductsJson === false) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shop Socks</title>
-  <link rel="stylesheet" href="shop-page-styles.css">
+  <link rel="stylesheet" href="shop-page-style.css">
 </head>
 <body>
   <main class="sock-shop-page">

@@ -1083,13 +1083,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.footer-things {
-    margin-top: 50px;
-    width: auto;
-    display: flex;
-    height: 300px;
-    background: var(--navy);
-}
+
 
 /* ========================================
    SIZING GUIDE PAGES
