@@ -1033,12 +1033,13 @@ nav.navbar_adjust header.header {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 34px;
-    padding: 14px 15px 14px 40px;
+    padding: 0px 0px 14px 40px;
     margin: 5px;
     background: var(--butter-yellow);
     border: 1.5px solid var(--border-yellow);
     border-radius: 30px;
     box-shadow: 4px 5px 0 var(--shadow-pink);
+    overflow: hidden;
 }
 
 .team-cap {
@@ -1048,13 +1049,7 @@ nav.navbar_adjust header.header {
 .team-cap h1 {
     font-size: 30px
 }
-.team-image {
-    display: flex;
-    width: 500px;
-    height: 250px;
-    object-position: right;
-    border-radius: 30px;
-}
+    
 .stats-bubble {
     width: auto;
     height: 100px;

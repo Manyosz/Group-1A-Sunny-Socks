@@ -79,7 +79,7 @@
                 We run our small operation with big hearts and great socks.</p>
         </div>
 
-            <img class="team-image" src="/images/fixed_team.png" alt="A team of developers together">
+            <img src="/images/fixed_team.png" alt="A team of developers together">
         </section>
         <section class="stats-bubble section-pst">
             <div class="stats-box">
