@@ -10,7 +10,7 @@
 </head>
 <body class="article-bg-bt">
 <main class="main-pst">
-    <div class="navbar-adjust">
+    <nav class="navbar_adjust">
       <?php include __DIR__ . '/header.php'; ?>
       
     <article class="article-pst article-bg-bt ">
@@ -101,7 +101,7 @@
                 <h2>12</h2>
                 <p>Countries Shipped</p>
             </div>
-        </div>
+            </nav>
         </section>
          <?php include __DIR__ . '/footer.php'; ?>
     </article>
