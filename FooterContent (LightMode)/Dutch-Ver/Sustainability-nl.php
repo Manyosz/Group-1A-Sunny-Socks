@@ -1,18 +1,20 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sizing Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sustainability</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="sizingGuide themeSizing">
+<body class="sizingGuide themeSustain">
 
-<?php include __DIR__ . '/header.php'; ?>
+<div class="info-header">
+<?php include __DIR__ . '/../../header.php'; ?>
+</div>
 
 <main class="sunny-page article-bg-bt">
 
@@ -22,17 +24,16 @@
 
         <div class="headText">
             <p class="t1">
-                <span class="emoji">📏</span>
-                Help Sizing Guide
+                <span class="emoji">🌿</span>
+                Bedrijf Duurzaamheid Vrolijkere sokken
             </p>
 
             <h1 class="t2">
-                Find Your Perfect Fit 📏
+                Vrolijkere sokken, kleinere voetafdruk 🌿
             </h1>
 
             <p class="t3">
-                Use your everyday shoe size to choose the
-                Sunny Socks size that feels best.
+                We maken kleurrijke essentials met respect voor mensen, materialen en de planeet.
             </p>
         </div>
 
@@ -52,10 +53,9 @@
             <span class="number">1</span>
 
             <div class="cardText">
-                <h2>Small EU 35–38</h2>
+                <h2>Betere materialen</h2>
                 <p>
-                    A comfortable fit for smaller adult
-                    feet and most teens.
+                    We geven de voorkeur aan gecertificeerde merinowol, sterke vezels en natuurlijke katoenmixen.
                 </p>
             </div>
         </section>
@@ -64,10 +64,9 @@
             <span class="number">2</span>
 
             <div class="cardText">
-                <h2>Medium EU 39–42</h2>
+                <h2>Eerlijke productie</h2>
                 <p>
-                    A great everyday fit for average
-                    adult shoe sizes.
+                    We werken alleen samen met fabrieken die voldoen aan duidelijke normen voor eerlijke en veilige arbeidsomstandigheden.
                 </p>
             </div>
         </section>
@@ -76,47 +75,29 @@
             <span class="number">3</span>
 
             <div class="cardText">
-                <h2>Large EU 43–46</h2>
+                <h2>Minder afval</h2>
                 <p>
-                    A roomy, comfortable fit for
-                    larger feet.
+                    Onze verpakkingen zijn gemaakt van gerecycled materiaal, recyclebaar en plasticvrij. We produceren in zorgvuldig geplande oplages.
                 </p>
             </div>
         </section>
-
-        <section class="size-card sub4">
-            <span class="number">4</span>
-
-            <div class="cardText">
-                <h2>Extra Large EU 47+</h2>
-                <p>
-                    Extra space for an easy and
-                    comfortable fit.
-                </p>
-            </div>
-        </section>
-
     </div>
 
     <section class="footContact">
         <div class="part1">
-            <h2 class="help">Still need a hand?</h2>
-            <p>Browse our products or ask the Sunny Socks community.</p>
+        <h2 class="help">Nog hulp nodig?</h2>
+        <p>Bekijk onze producten of stel je vraag aan de Sunny Socks-community.</p>
         </div>
 
         <div class="part2">
-            <a class="butt1" href="#">
-                <h3>Shop socks &rarr;</h3>
-            </a>
-            <a class="butt2" href="#">
-                <h3>Visit Q&A</h3>
-            </a>
+        <a class="butt1" href="#"><h3>Shop sokken &rarr;</h3></a>
+        <a class="butt2" href="#"><h3>Bekijk de veelgestelde vragen</h3></a>
         </div>
 </section>
 
 </main>
 
-<?php include __DIR__ . '/footer.php'; ?>
+<?php include __DIR__ . '/../../footer.php'; ?>
 
 </body>
 </html>
