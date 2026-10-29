@@ -164,19 +164,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    border: 2px solid rgb(30, 64, 122);
-    background-color: rgb(255, 247, 219);
-    border-radius: 16px;
-    box-shadow: 3px 3px 0 rgb(156, 231, 255);
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
-
-    &:hover{
-        border-color: #f05236;
-        box-shadow: 4px 4px 0 rgb(124, 232, 192);
-        transform: translateY(-1.5px) rotate(1deg);
-    }
 
     .header-language-summary{
       display: flex;
