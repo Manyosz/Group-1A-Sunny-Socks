@@ -4,7 +4,6 @@
 
  // English is the default; use Dutch when the URL contains ?lang=nl
 $currentLanguage = ($_GET['lang'] ?? '') === 'nl' ? 'nl' : 'en';
-
 ?>
 
 
