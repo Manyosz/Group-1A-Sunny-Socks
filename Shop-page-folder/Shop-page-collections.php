@@ -14,7 +14,7 @@ $sockShopProducts = [
         'category' => "Casual",
         'badge' => "BESTSELLER",
         'sizes' => ["S", "M", "L", "XL"],
-        'image' => "assets/sock-product-merino-crew-main-image.jpg",
+        'image' => "Shop-page-folder/sock-product-merino-crew-main-image.jpg",
         'date' => 6,
         'material' => "100% Merino Wool",
         'description' => "Our most loved sock. Crafted from 100% merino wool, the Merino Crew delivers all-day warmth without bulk. Naturally moisture-wicking and odour-resistant, it works just as well in the office as on a winter walk. Reinforced heel and toe for lasting durability.",
@@ -27,7 +27,7 @@ $sockShopProducts = [
         'category' => "Athletic",
         'badge' => "NEW",
         'sizes' => ["S", "M", "L"],
-        'image' => "assets/sock-product-ankle-sport-main-image.jpg",
+        'image' => "Shop-page-folder/sock-product-ankle-sport-main-image.jpg",
         'date' => 5,
         'material' => "Breathable cotton blend",
         'description' => "Lightweight ankle socks for active days, workouts and everyday trainers. Soft, breathable fabric and a secure fit keep you comfortable on the move.",
@@ -40,7 +40,7 @@ $sockShopProducts = [
         'category' => "Athletic",
         'badge' => "SALE",
         'sizes' => ["M", "L", "XL"],
-        'image' => "assets/sock-product-compression-run-main-image.jpg",
+        'image' => "Shop-page-folder/sock-product-compression-run-main-image.jpg",
         'date' => 4,
         'sale' => true,
         'material' => "Performance nylon blend",
@@ -54,7 +54,7 @@ $sockShopProducts = [
         'category' => "Cozy",
         'badge' => "",
         'sizes' => ["S", "M", "L", "XL"],
-        'image' => "assets/sock-product-cozy-cabin-knit-main-image.jpg",
+        'image' => "Shop-page-folder/sock-product-cozy-cabin-knit-main-image.jpg",
         'date' => 3,
         'material' => "Soft chunky knit blend",
         'description' => "Your cosy companion for quiet mornings and chilly evenings. A plush knitted texture wraps your feet in softness when it is time to slow down.",
@@ -67,7 +67,7 @@ $sockShopProducts = [
         'category' => "Hiking",
         'badge' => "NEW",
         'sizes' => ["M", "L", "XL"],
-        'image' => "assets/sock-product-hiking-quarter-main-image.jpg",
+        'image' => "Shop-page-folder/sock-product-hiking-quarter-main-image.jpg",
         'date' => 2,
         'material' => "Wool performance blend",
         'description' => "Trail-ready comfort for weekend hikes and outdoor adventures. A supportive feel and practical quarter height pair well with hiking shoes and boots.",
@@ -80,7 +80,7 @@ $sockShopProducts = [
         'category' => "Casual",
         'badge' => "",
         'sizes' => ["S", "M", "L"],
-        'image' => "assets/sock-product-no-show-tab-main-image.jpg",
+        'image' => "Shop-page-folder/sock-product-no-show-tab-main-image.jpg",
         'date' => 1,
         'material' => "Soft cotton blend",
         'description' => "Low-profile socks that sit discreetly inside trainers while adding a small flash of colour. Made for casual outfits, everyday errands and sunny days.",
@@ -106,6 +106,7 @@ if ($sockShopProductsJson === false) {
   <link rel="stylesheet" href="shop-page-styles.css">
 </head>
 <body>
+  <?php include __DIR__ . '/header.php'; ?>
   <main class="sock-shop-page">
     <header class="sock-shop-heading">
       <div>
