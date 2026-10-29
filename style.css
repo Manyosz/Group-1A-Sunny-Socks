@@ -1924,3 +1924,83 @@ nav.navbar_adjust header.header {
     max-width: 1250px;
     margin: 28px auto;
 }
+
+/* ========================================
+   INFORMATION PAGES DARK MODE
+======================================== */
+
+body.sizingGuide.darkFooter {
+    background: linear-gradient(120deg, #202034, #101116);
+    color: #fffaf0;
+}
+
+.darkFooter main.sunny-page {
+    background: #19191e;
+    border: 1px solid #414759;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.darkFooter .headBox {
+    background: #262a34;
+    border-color: #465064;
+    border-radius: 15px;
+    box-shadow: 7px 8px 0 #08090e;
+}
+
+.darkFooter .headText .t1,
+.darkFooter .headText .t2,
+.darkFooter .headText .t3 {
+    color: #fffaf0;
+}
+
+.darkFooter .circle {
+    background-color: #9b5949;
+}
+
+.darkFooter .size-card {
+    background: #262a34;
+    border-color: #465064;
+    border-radius: 15px;
+    box-shadow: 7px 8px 0 #08090e;
+}
+
+.darkFooter .cardText h2,
+.darkFooter .cardText p {
+    color: #fffaf0;
+}
+
+.darkFooter .number {
+    background: #f36539;
+}
+
+.darkFooter .footContact {
+    background: #234783;
+    border-radius: 15px;
+    background-image: radial-gradient(circle, #3e619c 1px, transparent 2px);
+    border: 1px solid #3b5790;
+    box-shadow: none;
+}
+
+.darkFooter .footContact .butt1 {
+    background: #ff5935;
+    color: white;
+}
+
+.darkFooter .footContact .butt2 {
+    background: #242936;
+    color: white;
+}
+
+/* ========================================
+   INFORMATION PAGES DARK MODE HEADER TEXT
+======================================== */
+
+.darkFooter .info-header .header {
+    color: #17346f;
+}
+
+.darkFooter .info-header .header-language-summary {
+    color: #17346f;
+}
+
