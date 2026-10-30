@@ -26,7 +26,7 @@ have to copy paste it on every page and if we change it, it will automatically c
             <h1><span class="home-yellow-text">Sunny</span> Socks</h1>
             <p>Colourful socks for work, home, sport & a greener <br> world.</p>
             <div class="hero-buttons">
-                <a href="Shop-page-collections.html" class="home-shop-button">Shop the collection</a>
+                <a href="Shop-page-collections.php" class="home-shop-button">Shop the collection</a>
                 <a href="About_us.php" class="home-story-button">Our story</a>
             </div>
         </div>
@@ -42,12 +42,12 @@ have to copy paste it on every page and if we change it, it will automatically c
         <div class="home-categories">
             <div class="category-heading">
                 <p>Shop by Category</p>
-                <a href="Shop-page-collections.html">View all→</a>
+                <a href="Shop-page-collections.php">View all→</a>
             </div>
 
             <div class="home-category-cards">
                 <div class="home-category-card">
-                    <a href="Shop-page-collections.html">
+                    <a href="Shop-page-collections.php">
                         <img src="/images/athletic.jpg" alt="Athletic Socks">
                     </a> <!-- Here it need to go to the athletic styles in the shop page-->
                 <div class="home-category-details">
@@ -57,7 +57,7 @@ have to copy paste it on every page and if we change it, it will automatically c
                 </div>
 
                 <div class="home-category-card">
-                    <a href="Shop-page-collections.html">
+                    <a href="Shop-page-collections.php">
                         <img src="/images/no-show-tab.jpg" alt="Casual Socks">
                     </a> <!-- Here it need to go to the casual styles in the shop page-->
                 <div class="home-category-details">
@@ -67,7 +67,7 @@ have to copy paste it on every page and if we change it, it will automatically c
                 </div>
 
                 <div class="home-category-card">
-                    <a href="Shop-page-collections.html">
+                    <a href="Shop-page-collections.php">
                         <img src="/images/hiking.jpg" alt="Hiking Socks">
                     </a> <!-- Here it need to go to the hiking styles in the shop page-->
                 <div class="home-category-details">
@@ -77,7 +77,7 @@ have to copy paste it on every page and if we change it, it will automatically c
                 </div>
 
                 <div class="home-category-card">
-                    <a href="Shop-page-collections.html">
+                    <a href="Shop-page-collections.php">
                         <img src="/images/cozy.jpg" alt="Cozy Socks">
                     </a> <!-- Here it need to go to the cozy styles in the shop page-->
                 <div class="home-category-details">
@@ -94,11 +94,11 @@ have to copy paste it on every page and if we change it, it will automatically c
         <div class="home-bestsellers">
             <div class="home-bestsellers-heading">
                 <h2>🔥 Bestsellers</h2>
-                <a href="Shop-page-collections.html">Shop all →</a>
+                <a href="Shop-page-collections.php">Shop all →</a>
             </div>
 
             <div class="home-bestseller-cards">
-                <a class="home-product-card" href="Shop-page-collections.html">
+                <a class="home-product-card" href="Shop-page-collections.php">
                     <img src="/images/merino-crew.jpg" alt="Merino Crew socks">
 
                     <div class="home-product-details">
@@ -115,7 +115,7 @@ have to copy paste it on every page and if we change it, it will automatically c
                     </div>
                 </a>
 
-                <a class="home-product-card" href="Shop-page-collections.html">
+                <a class="home-product-card" href="Shop-page-collections.php">
                     <img src="/images/athletic.jpg" alt="Ankle Sport socks">
 
                     <div class="home-product-details">
@@ -131,7 +131,7 @@ have to copy paste it on every page and if we change it, it will automatically c
                     </div>
                 </a>
 
-                <a class="home-product-card" href="Shop-page-collections.html">
+                <a class="home-product-card" href="Shop-page-collections.php">
                     <img src="/images/hiking.jpg" alt="Compression Run socks">
 
                     <div class="home-product-details">

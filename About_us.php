@@ -10,7 +10,7 @@
 </head>
 <body class="article-bg-bt">
 <main class="main-pst">
-    <div class="navbar-adjust">
+    <nav class="navbar_adjust">
       <?php include __DIR__ . '/header.php'; ?>
       
     <article class="article-pst article-bg-bt ">
@@ -79,7 +79,7 @@
                 We run our small operation with big hearts and great socks.</p>
         </div>
 
-            <img class="team-image" src="/images/fixed_team.png" alt="A team of developers together">
+            <img src="/images/fixed_team.png" alt="A team of developers together">
         </section>
         <section class="stats-bubble section-pst">
             <div class="stats-box">
@@ -101,7 +101,7 @@
                 <h2>12</h2>
                 <p>Countries Shipped</p>
             </div>
-        </div>
+            </nav>
         </section>
          <?php include __DIR__ . '/footer.php'; ?>
     </article>
