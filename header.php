@@ -2,6 +2,8 @@
 
  $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
+ // English is the default; use Dutch when the URL contains ?lang=nl
+$currentLanguage = ($_GET['lang'] ?? '') === 'nl' ? 'nl' : 'en';
 ?>
 
 
@@ -23,7 +25,7 @@
                 ABOUT</a>
             </div>
 
-            <!-- Also needs some php to be able to count the items and also animations -->
+            <!-- Also needs some php to be able to count the items-->
             <div class="header-button">
                 <div class="header-button-basket">
                     <a href="#" class="header-basket-link">
@@ -38,20 +40,98 @@
                         <span>🌙</span>
                     </a>
                 </div>
-    <!-- language change -->
+                <!-- Language change -->
                 <details class="header-language">
-                    <summary class="header-language-summary">🌐 EN</summary>
+                    <summary class="header-language-summary">
+                        🌐 <?= strtoupper($currentLanguage) ?>
+                    </summary>
 
                     <div class="header-language-options">
-                        <a href="#">🇬🇧 English</a>
-                        <a href="#">🇳🇱 Nederlands</a>
+                        <a href="?lang=en"
+                        class="<?= $currentLanguage === 'en' ? 'active' : '' ?>">
+                            🇬🇧 English
+                        </a>
+
+                        <a href="?lang=nl"
+                        class="<?= $currentLanguage === 'nl' ? 'active' : '' ?>">
+                            🇳🇱 Nederlands
+                        </a>
                     </div>
                 </details>
 
-                <!-- Searchbar pop up -->
-                <details>
-                    <summary>🔍 Search</summary>
-                </details>
+                <button type="button" class="header-search-button" id="openSearch">
+                    <span aria-hidden="true">🔍</span>
+                    <span>SEARCH</span>
+                </button>
 
             </div>
     </header>
+    
+    <div class="header-search-panel" id="searchPanel" hidden>
+        <div class="header-search-row">
+            <span class="header-search-icon" aria-hidden="true">🔍</span>
+
+            <input
+                type="search"
+                id="searchInput"
+                class="header-search-input"
+                placeholder="What socks are you looking for?"
+                aria-label="Search for socks"
+            >
+
+            <button type="button" class="header-search-close" id="closeSearch">
+                ✕ CLOSE
+            </button>
+        </div>
+
+        <div class="header-popular-searches">
+            <p>POPULAR SEARCHES</p>
+
+            <div class="header-search-tags">
+                <button type="button">MERINO</button>
+                <button type="button">ATHLETIC</button>
+                <button type="button">HIKING</button>
+                <button type="button">COZY</button>
+                <button type="button">ANKLE</button>
+                <button type="button">COMPRESSION</button>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    // Find the SEARCH button using its HTML id.
+    const openSearch = document.getElementById("openSearch");
+
+    // Find the CLOSE button.
+    const closeSearch = document.getElementById("closeSearch");
+
+    // Find the whole search panel.
+    const searchPanel = document.getElementById("searchPanel");
+
+    // Find the search input field.
+    const searchInput = document.getElementById("searchInput");
+
+    // Wait for the user to click the SEARCH button.
+    openSearch.addEventListener("click", function () {
+        // Show the search panel.
+        searchPanel.hidden = false;
+
+        // Tell screen readers that the panel is open.
+        openSearch.setAttribute("aria-expanded", "true");
+
+        // Put the typing cursor in the search field.
+        searchInput.focus();
+    });
+
+    // Wait for the user to click the CLOSE button.
+    closeSearch.addEventListener("click", function () {
+        // Hide the search panel.
+        searchPanel.hidden = true;
+
+        // Tell screen readers that the panel is closed.
+        openSearch.setAttribute("aria-expanded", "false");
+
+        // Put keyboard focus back on the SEARCH button.
+        openSearch.focus();
+    });
+</script>
