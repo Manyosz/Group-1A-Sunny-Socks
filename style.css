@@ -39,6 +39,7 @@
 }
 
 .header {
+    font-family: "Trebuchet MS", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1185,14 +1186,6 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     box-sizing: border-box;
 }
 
-nav.navbar_adjust header.header {
-    display: flex;
-    max-width: 100%;
-    min-height: 100px;
-    padding: 10px;
-    margin: 0;
-    justify-content: space-between;
-}
 
 .article-bg-bt {
     background-image: 
@@ -1567,38 +1560,6 @@ nav.navbar_adjust header.header {
    WHOLESALE HEADER AND FOOTER
 ======================================== */
 
-.themeWholesale .header {
-    grid-column: 1 / -1;
-    width: 100%;
-    min-width: 0;
-    min-height: 80px;
-    height: auto;
-    padding: 10px 24px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.themeWholesale .header img {
-    width: 140px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.themeWholesale .header-page {
-    border: 0;
-    gap: clamp(12px, 2vw, 40px);
-    flex-wrap: wrap;
-}
-
-.themeWholesale .header-button {
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 14px;
-}
 
 .themeWholesale .home-footer {
     grid-column: 1 / -1;

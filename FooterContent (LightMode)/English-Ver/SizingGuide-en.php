@@ -107,7 +107,7 @@
         </div>
 
         <div class="part2">
-            <a class="butt1" href="#">
+            <a class="butt1" href="/Shop-page-folder/Shop-page-collections.php">
                 <h3>Shop socks &rarr;</h3>
             </a>
             <a class="butt2" href="#">
