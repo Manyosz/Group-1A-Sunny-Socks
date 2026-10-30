@@ -21,27 +21,27 @@
   <nav class="home-links" aria-label="Footer">
     <div class="sunny-column">
       <h3 class="footer-yellow">Shop</h3>
-      <a href="/collections/all">All Socks</a>
-      <a href="/collections/athletic">Athletic</a>
-      <a href="/collections/casual">Casual</a>
-      <a href="/collections/hiking">Hiking</a>
-      <a href="/collections/sale">Sale</a>
+      <a href="/Shop-page-folder/Shop-page-collections.php">All Socks</a>
+      <a href="/Shop-page-folder/Shop-page-collections.php">Athletic</a>
+      <a href="/Shop-page-folder/Shop-page-collections.php">Casual</a>
+      <a href="/Shop-page-folder/Shop-page-collections.php">Hiking</a>
+      <a href="/Shop-page-folder/Shop-page-collections.php">Sale</a>
     </div>
 
     <div class="sunny-column">
       <h3 class="footer-pink">Help</h3>
-      <a href="/SizingGuide.php">Sizing Guide</a>
-      <a href="/Returns.php">Returns</a>
-      <a href="/Shipping.php">Shipping</a>
-      <a href="/FAQ.php">FAQ</a>
+      <a href="/FooterContent (LightMode)/English-Ver/SizingGuide-en.php">Sizing Guide</a>
+      <a href="/FooterContent (LightMode)/English-Ver/Returns-en.php">Returns</a>
+      <a href="/FooterContent (LightMode)/English-Ver/Shipping-en.php">Shipping</a>
+      <a href="/FooterContent (LightMode)/English-Ver/FAQ-en.php">FAQ</a>
     </div>
 
     <div class="sunny-column">
       <h3 class="footer-mint">Company</h3>
       <a href="/About_us.php">About</a>
-      <a href="/Sustainability.php">Sustainability</a>
-      <a href="/Wholesale.php">Wholesale</a>
-      <a href="/Press.php">Press</a>
+      <a href="/FooterContent (LightMode)/English-Ver/Sustainability-en.php">Sustainability</a>
+      <a href="/FooterContent (LightMode)/English-Ver/Wholesale-en.php">Wholesale</a>
+      <a href="/FooterContent (LightMode)/English-Ver/Press-en.php">Press</a>
     </div>
 
     <div class="sunny-column sunny-socials">
