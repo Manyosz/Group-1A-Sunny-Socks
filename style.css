@@ -1405,7 +1405,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    SIZING GUIDE PAGES
-======================================== */
 
 
 
@@ -1414,11 +1413,9 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    1. PAGE COLOR THEMES
-======================================== */
 
 /* ========================================
    SIZING GUIDE
-======================================== */
 
 .themeSizing {
     --bg-start: #FFF1B0;
@@ -1443,7 +1440,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    RETURNS
-======================================== */
 
 .themeReturns {
     --bg-start: #f6fb93;
@@ -1468,7 +1464,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    SHIPPING
-======================================== */
 
 .themeShipping {
     --bg-start: #8fe9ec;
@@ -1493,7 +1488,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    FAQ
-======================================== */
 
 .themeFAQ {
     --bg-start: #f3bdef;
@@ -1518,7 +1512,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    SUSTAINABILITY
-======================================== */
 
 .themeSustain {
     --bg-start: #d2f9ad;
@@ -1565,7 +1558,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    WHOLESALE HEADER AND FOOTER
-======================================== */
 
 .themeWholesale .header {
     grid-column: 1 / -1;
@@ -1632,7 +1624,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    2. PAGE LAYOUT
-======================================== */
 
 .sizingGuide {
     display: grid;
@@ -1651,7 +1642,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    3. HERO BOX
-======================================== */
 
 .headBox {
     position: relative;
@@ -1673,7 +1663,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    4. HERO BACKGROUND
-======================================== */
 
 .heroBackground {
     background-image:
@@ -1692,7 +1681,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    ALSO SUPPORTS YOUR OLDER BGSIZING HTML
-======================================== */
 .headBox.bgSizing {
     background-image:
         radial-gradient(var(--dots, #b336ae) 1px, transparent 2px),
@@ -1704,7 +1692,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    5. DECORATIVE CIRCLES
-======================================== */
 
 .circle {
     position: absolute;
@@ -1743,7 +1730,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    6. COLORFUL BOTTOM LINE
-======================================== */
 
 .colorful-line {
     position: absolute;
@@ -1766,7 +1752,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    7. HERO TEXT
-======================================== */
 
 .headText {
     position: relative;
@@ -1787,7 +1772,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    FIRST LINE
-======================================== */
 
 .headText .t1 {
     display: flex;
@@ -1806,7 +1790,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    MAIN HEADING
-======================================== */
 
 .headText .t2 {
     font-family: 'Fredoka', sans-serif;
@@ -1822,7 +1805,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    DESCRIPTION
-======================================== */
 
 .headText .t3 {
     font-family: 'Nunito', sans-serif;
@@ -1836,7 +1818,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    EMOJI BOX
-======================================== */
 
 .headText .emoji {
     display: inline-flex;
@@ -1859,7 +1840,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    8. GRID CONTAINING FOUR CARDS
-======================================== */
 
 .sizes-grid {
     grid-column: 3 / 11;
@@ -1874,7 +1854,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    9. SHARED CARD STYLING
-======================================== */
 
 .size-card {
     display: flex;
@@ -1894,7 +1873,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    10. INDIVIDUAL CARD COLORS
-======================================== */
 
 .sub1 {
     background-color: var(--card1);
@@ -1915,7 +1893,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    11. NUMBER SQUARES
-======================================== */
 
 .number {
     display: flex;
@@ -1940,7 +1917,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    12. CARD TEXT
-======================================== */
 
 .cardText h2 {
     font-family: 'Fredoka', sans-serif;
@@ -1966,7 +1942,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    13. FOOTERCONTACT
-======================================== */
 
 .footContact {
     grid-column: 3 / 11;
@@ -2005,7 +1980,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    FOOTERCONTACT TEXT
-======================================== */
 
 .footContact p {
     color: white;
@@ -2018,7 +1992,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    14. FOOTERCONTACT BUTTONS
-======================================== */
 
 .footContact .butt1 {
     color: white;
@@ -2053,7 +2026,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    FOOTERCONTACT LAYOUT
-======================================== */
 
 .footContact .part2 {
     display: flex;
@@ -2073,7 +2045,6 @@ nav.navbar_adjust header.header {
 
 /* ========================================
    INFORMATION PAGES
-======================================== */
 .sizingGuide {
     display: block;
     background-image:
