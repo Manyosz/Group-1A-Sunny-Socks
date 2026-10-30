@@ -1214,7 +1214,7 @@ nav.navbar_adjust header.header {
 .article-pst {
         border-radius: 0px;
         background-color: white;
-        max-width: 67vw;
+        max-width: 1250px;
         min-height: 120vh;
         display: flex;
         flex-direction: column;
