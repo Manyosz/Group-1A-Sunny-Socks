@@ -16,9 +16,17 @@
     <main class="order-main">
       <section class="order-shell">
 
+          <section class="story-card section-pst">
+                      <h1>Place an Order 📦</h1>
+                      <p>Fill in your details and we'll get your socks to you.</p>
+                  </section>
+
+              <section class="story-card section-pst">
+                          <h1>Our story 🧶</h1>
+                          <p>Socks made with heart, worn with joy.</p>
+                      </section>
+
         <div class="order-form-panel">
-          <h1 class="order-title">Place your order</h1>
-          <p class="order-subtitle">Fill in your details and we’ll get your socks to you.</p>
 
           <form class="order-form">
             <div class="order-field">
@@ -104,8 +112,8 @@
           <div class="order-hero-card">
             <div class="order-hero-overlay"></div>
             <div class="order-hero-text">
-              <p>Your socks are waiting ☀️</p>
-              <span>Fresh comfort, bright colors, quick delivery.</span>
+              <p>Your socks are waiting 🧦️</p>
+              <span>Pick your favourites and we'll pack them with love.</span>
             </div>
           </div>
 
