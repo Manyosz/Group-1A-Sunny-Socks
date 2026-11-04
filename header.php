@@ -135,3 +135,4 @@ $currentLanguage = ($_GET['lang'] ?? '') === 'nl' ? 'nl' : 'en';
         openSearch.focus();
     });
 </script>
+<script src="/basket.js"></script>

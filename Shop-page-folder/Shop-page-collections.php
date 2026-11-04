@@ -105,6 +105,7 @@ if ($sockShopProductsJson === false) {
   <title>Shop Socks</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="shop-page-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
   <?php include __DIR__ . '/../header.php'; ?>
@@ -194,6 +195,6 @@ if ($sockShopProductsJson === false) {
   <?php include __DIR__ . '/../footer.php'; ?>
 
   <script>window.sockShopProducts = <?= $sockShopProductsJson ?>;</script>
-  <script src="shop-page-collections-script.js"></script>
+  <script src="Shop-page-collections-script.js"></script>
 </body>
 </html>

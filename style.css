@@ -2138,10 +2138,10 @@ body.contentP.darkFooter {
 }
 
 /* order page */
+
 .order-body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #ef86d9 0%, #ffd7a8 100%);
   min-height: 100vh;
   color: #222;
 }
@@ -2301,6 +2301,10 @@ body.contentP.darkFooter {
 .order-sidebar {
   display: grid;
   gap: 14px;
+
+  position: sticky;
+  top: 96px;
+  align-self: start;
 }
 
 .order-hero-card {
@@ -2308,14 +2312,18 @@ body.contentP.darkFooter {
   min-height: 180px;
   border-radius: 20px;
   overflow: hidden;
-  background: url('/images/order-hero.jpg') center/cover no-repeat;
+  background: url('/images/orderBox.jpg') center/cover no-repeat;
   box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
 .order-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.45));
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 58, 100, 0) 30%,
+    rgba(30, 58, 100, 0.85) 100%
+  );
 }
 
 .order-hero-text {
@@ -2399,4 +2407,157 @@ body.contentP.darkFooter {
   color: #fff;
   text-decoration: none;
   opacity: 0.9;
+}
+
+/* Stack the price and Remove button on the right. */
+.order-item-price-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+/* Small, orange, underlined Remove button. */
+.order-remove {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #ef6b55;
+  font-family: inherit;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+#orderItems {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.confirmation-main{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.confirmation-box{
+  border: 1px solid rgb(255, 181, 156);
+  width: 600px;
+  background-color: rgb(214, 245, 230);
+  box-shadow: 8px 8px 0 #ffc2ad;
+  border-radius: 1.5rem;
+  padding: 15px;
+}
+
+.confirmation-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 40px;
+
+
+  background-color: rgb(255, 243, 224);
+  border: 2px solid #ff5b35;
+  border-radius: 15px;
+
+  color: #2d2d2d;
+  font-size: 30px;
+}
+
+.confirmation-text{
+  display: flex;
+  justify-content: center;
+  p{
+    margin: 0;
+    color: rgb(241, 91, 57);
+    border: 1px solid rgb(255, 205, 184);
+    background-color: rgb(255, 243, 224);
+    border-radius: 3.40282e38px;
+    width: fit-content;
+    font-size: 14px;
+    padding: 1px 3px 1px 3px;
+  }
+}
+
+.confirmation-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  gap: 10px;
+  span{
+    color: #8a8a8a;
+  }
+  p{
+    margin: 0;
+    color: black;
+  }
+  .red{
+    color: red;
+  }
+}
+
+.confirmation-address{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  > div{
+    border: 1px solid #ffe0d6;
+    border-radius: 15px;
+    background-color: white;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 10px;
+    span{
+      color: #8a8a8a;
+      font-size: 18px;
+    }
+    p{
+      color: black;
+      font-size: 15px;
+    }
+  }
+}
+
+.confirmation-order{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  > div{
+    border: 1px solid #ffe0d6;
+    border-radius: 15px;
+    background-color: white;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 10px;
+    span{
+      color: #8a8a8a;
+      font-size: 18px;
+    }
+    p{
+      color: black;
+      font-size: 15px;
+    }
+  }
+}
+
+.confirmation-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ffe0d6;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    &:hover{
+      background-color: rgb(241, 91, 57);
+      color: white;
+    }
+  }
 }
