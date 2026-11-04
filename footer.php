@@ -30,18 +30,18 @@
 
     <div class="sunny-column">
       <h3 class="footer-pink">Help</h3>
-      <a href="/FooterContent (LightMode)/English-Ver/SizingGuide-en.php">Sizing Guide</a>
-      <a href="/FooterContent (LightMode)/English-Ver/Returns-en.php">Returns</a>
-      <a href="/FooterContent (LightMode)/English-Ver/Shipping-en.php">Shipping</a>
-      <a href="/FooterContent (LightMode)/English-Ver/FAQ-en.php">FAQ</a>
+      <a href="/FooterContent_(LightMode)/English-Ver/SizingGuide-en.php">Sizing Guide</a>
+      <a href="/FooterContent_(LightMode)/English-Ver/Returns-en.php">Returns</a>
+      <a href="/FooterContent_(LightMode)/English-Ver/Shipping-en.php">Shipping</a>
+      <a href="/FooterContent_(LightMode)/English-Ver/FAQ-en.php">FAQ</a>
     </div>
 
     <div class="sunny-column">
       <h3 class="footer-mint">Company</h3>
       <a href="/About_us.php">About</a>
-      <a href="/FooterContent (LightMode)/English-Ver/Sustainability-en.php">Sustainability</a>
-      <a href="/FooterContent (LightMode)/English-Ver/Wholesale-en.php">Wholesale</a>
-      <a href="/FooterContent (LightMode)/English-Ver/Press-en.php">Press</a>
+      <a href="/FooterContent_(LightMode)/English-Ver/Sustainability-en.php">Sustainability</a>
+      <a href="/FooterContent_(LightMode)/English-Ver/Wholesale-en.php">Wholesale</a>
+      <a href="/FooterContent_(LightMode)/English-Ver/Press-en.php">Press</a>
     </div>
 
     <div class="sunny-column sunny-socials">

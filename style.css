@@ -1563,8 +1563,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 .themeWholesale .home-footer {
     grid-column: 1 / -1;
-    min-width: 0;
-    width: min(1250px, calc(100% - 40px));
+    width: 95%;
     max-width: 1250px;
     justify-self: center;
 }
@@ -1595,7 +1594,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
    2. PAGE LAYOUT
 ======================================== */
 
-.sizingGuide {
+.contentP {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     column-gap: 12px;
@@ -1644,24 +1643,12 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
         ),
         linear-gradient(
             110deg,
-            var(--bg-start),
+            var(--bg-start), 
             var(--bg-end)
         );
 
     background-size: 22px 22px, 100% 100%;
 }
-
-/* ========================================
-   ALSO SUPPORTS YOUR OLDER BGSIZING HTML
-======================================== */
-.headBox.bgSizing {
-    background-image:
-        radial-gradient(var(--dots, #b336ae) 1px, transparent 2px),
-        linear-gradient(110deg, #FFF1B0, #FFD5CF);
-
-    background-size: 22px 22px, 100% 100%;
-}
-
 
 /* ========================================
    5. DECORATIVE CIRCLES
@@ -1673,8 +1660,6 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
     background-color: var(--circle);
     opacity: 0.35;
-
-    pointer-events: none;
 }
 
 .circle1 {
@@ -1731,7 +1716,6 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 
 .headText {
     position: relative;
-    z-index: 1;
 
     padding: 60px 70px;
 
@@ -1814,7 +1798,6 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     border-radius: 8px;
 
     font-size: 20px;
-    flex-shrink: 0;
 }
 
 
@@ -1823,15 +1806,10 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 ======================================== */
 
 .sizes-grid {
-    grid-column: 3 / 11;
-
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-    margin-top: 20px;
 }
-
 
 /* ========================================
    9. SHARED CARD STYLING
@@ -2035,7 +2013,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
 /* ========================================
    INFORMATION PAGES
 ======================================== */
-.sizingGuide {
+.contentP {
     display: block;
     background-image:
         radial-gradient(circle, rgba(255, 191, 89, 0.72) 1.6px, transparent 1.8px),
@@ -2043,16 +2021,15 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     background-size: 24px 24px, 100% 100%;
 }
 
-.sizingGuide .info-header {
+.contentP .info-header {
     width: 83vw;
     max-width: 1250px;
     margin: 0 auto;
     position: sticky;
     top: 0;
-    z-index: 10;
 }
 
-.sizingGuide .info-header .header {
+.contentP .info-header .header {
     width: 100%;
     max-width: none;
     margin: 0;
@@ -2060,7 +2037,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     align-items: center;
 }
 
-.sizingGuide .sunny-page {
+.contentP .sunny-page {
     width: 83vw;
     max-width: 1250px;
     margin: auto;
@@ -2068,14 +2045,14 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     background: transparent;
 }
 
-.sizingGuide .headBox,
-.sizingGuide .sizes-grid,
-.sizingGuide .footContact {
+.contentP .headBox,
+.contentP .sizes-grid,
+.contentP .footContact {
     width: 100%;
     margin-top: 12px;
 }
 
-.sizingGuide .home-footer {
+.contentP .home-footer {
     width: 83vw;
     max-width: 1250px;
     margin: 28px auto;
@@ -2085,7 +2062,7 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
    INFORMATION PAGES DARK MODE
 ======================================== */
 
-body.sizingGuide.darkFooter {
+body.contentP.darkFooter {
     background: linear-gradient(120deg, #202034, #101116);
     color: #fffaf0;
 }
