@@ -11,3 +11,8 @@ node_modules/
 
 # Debug logs
 *.log
+
+# JetBrains / PhpStorm settings
+.idea/
+
+/mail-config.php

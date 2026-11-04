@@ -102,9 +102,9 @@
             </div>
 
         </section>
-         <?php include __DIR__ . '/footer.php'; ?>
+        
     </article>
-
+<?php include __DIR__ . '/footer.php'; ?>
 </main>
 
 </body>
