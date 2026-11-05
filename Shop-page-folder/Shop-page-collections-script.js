@@ -11,7 +11,6 @@ let currentSockShopPage = 1;
 let sockShopSortOrder = "newest";
 let selectedSockProduct = null;
 let selectedSockSize = "";
-let sockShopBagItemCount = 0;
 let sockProductDetailTriggerElement = null;
 
 const sockShopProductGridElement = document.querySelector("#sockShopProductGrid");
@@ -204,15 +203,56 @@ document.querySelector("#sockProductDetailSizes").addEventListener("click", even
 });
 
 // Front-end demo: add selected item to the bag counter.
-document.querySelector("#sockProductDetailAddToBag").addEventListener("click", () => {
-  if (!selectedSockProduct || !selectedSockSize) return;
+document.querySelector("#sockProductDetailAddToBag")
+  .addEventListener("click", function () {
 
-  sockShopBagItemCount += 1;
-  document.querySelector("#sockShopBagCount").textContent = sockShopBagItemCount;
-  document.querySelector("#sockProductDetailSizeMessage").textContent =
-    `${selectedSockProduct.name}, size ${selectedSockSize}, added to your bag.`;
-  document.querySelector("#sockProductDetailAddToBag").textContent = "Added ✓";
-});
+    // Stop if the customer has not selected a product and size.
+    if (!selectedSockProduct || !selectedSockSize) {
+      return;
+    }
+
+    const basket = getBasket();
+
+    // Look for the same product in the same size.
+    const existingItem = basket.find(function (item) {
+      return item.id === selectedSockProduct.id &&
+             item.size === selectedSockSize;
+    });
+
+    if (existingItem) {
+      // This product and size are already in the basket.
+      existingItem.quantity += 1;
+    } else {
+      // Add a new item to the basket.
+      basket.push({
+        id: selectedSockProduct.id,
+        name: selectedSockProduct.name,
+        price: selectedSockProduct.price,
+        image: selectedSockProduct.image,
+        size: selectedSockSize,
+        quantity: 1
+      });
+    }
+
+    // Save the updated list in browser storage.
+    try {
+      localStorage.setItem("basket", JSON.stringify(basket));
+    } catch {
+      document.querySelector("#sockProductDetailSizeMessage").textContent =
+        "Could not save your basket. Please allow browser storage.";
+      return;
+    }
+
+    // Update both numbers immediately.
+    updateBasketCounters();
+
+    document.querySelector("#sockProductDetailAddToBag").textContent =
+      "Added ✓";
+
+    document.querySelector("#sockProductDetailSizeMessage").textContent =
+      selectedSockProduct.name + ", size " + selectedSockSize +
+      ", added to your basket.";
+  });
 
 sockProductDetailCloseButton.addEventListener("click", closeSockProductDetails);
 

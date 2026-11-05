@@ -39,6 +39,7 @@
 }
 
 .header {
+    font-family: "Trebuchet MS", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1185,14 +1186,6 @@ h1 { margin: 0; font-size: clamp(28px, 4vw, 43px); line-height: 1.1; font-weight
     box-sizing: border-box;
 }
 
-nav.navbar_adjust header.header {
-    display: flex;
-    max-width: 100%;
-    min-height: 100px;
-    padding: 10px;
-    margin: 0;
-    justify-content: space-between;
-}
 
 .article-bg-bt {
     background-image: 
@@ -1567,43 +1560,10 @@ nav.navbar_adjust header.header {
    WHOLESALE HEADER AND FOOTER
 ======================================== */
 
-.themeWholesale .header {
-    grid-column: 1 / -1;
-    width: 100%;
-    min-width: 0;
-    min-height: 80px;
-    height: auto;
-    padding: 10px 24px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.themeWholesale .header img {
-    width: 140px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.themeWholesale .header-page {
-    border: 0;
-    gap: clamp(12px, 2vw, 40px);
-    flex-wrap: wrap;
-}
-
-.themeWholesale .header-button {
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 14px;
-}
 
 .themeWholesale .home-footer {
     grid-column: 1 / -1;
-    min-width: 0;
-    width: min(1250px, calc(100% - 40px));
+    width: 95%;
     max-width: 1250px;
     justify-self: center;
 }
@@ -1634,7 +1594,7 @@ nav.navbar_adjust header.header {
    2. PAGE LAYOUT
 ======================================== */
 
-.sizingGuide {
+.contentP {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     column-gap: 12px;
@@ -1683,24 +1643,12 @@ nav.navbar_adjust header.header {
         ),
         linear-gradient(
             110deg,
-            var(--bg-start),
+            var(--bg-start), 
             var(--bg-end)
         );
 
     background-size: 22px 22px, 100% 100%;
 }
-
-/* ========================================
-   ALSO SUPPORTS YOUR OLDER BGSIZING HTML
-======================================== */
-.headBox.bgSizing {
-    background-image:
-        radial-gradient(var(--dots, #b336ae) 1px, transparent 2px),
-        linear-gradient(110deg, #FFF1B0, #FFD5CF);
-
-    background-size: 22px 22px, 100% 100%;
-}
-
 
 /* ========================================
    5. DECORATIVE CIRCLES
@@ -1712,8 +1660,6 @@ nav.navbar_adjust header.header {
 
     background-color: var(--circle);
     opacity: 0.35;
-
-    pointer-events: none;
 }
 
 .circle1 {
@@ -1770,7 +1716,6 @@ nav.navbar_adjust header.header {
 
 .headText {
     position: relative;
-    z-index: 1;
 
     padding: 60px 70px;
 
@@ -1853,7 +1798,6 @@ nav.navbar_adjust header.header {
     border-radius: 8px;
 
     font-size: 20px;
-    flex-shrink: 0;
 }
 
 
@@ -1862,15 +1806,10 @@ nav.navbar_adjust header.header {
 ======================================== */
 
 .sizes-grid {
-    grid-column: 3 / 11;
-
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-    margin-top: 20px;
 }
-
 
 /* ========================================
    9. SHARED CARD STYLING
@@ -2074,7 +2013,7 @@ nav.navbar_adjust header.header {
 /* ========================================
    INFORMATION PAGES
 ======================================== */
-.sizingGuide {
+.contentP {
     display: block;
     background-image:
         radial-gradient(circle, rgba(255, 191, 89, 0.72) 1.6px, transparent 1.8px),
@@ -2082,16 +2021,15 @@ nav.navbar_adjust header.header {
     background-size: 24px 24px, 100% 100%;
 }
 
-.sizingGuide .info-header {
+.contentP .info-header {
     width: 83vw;
     max-width: 1250px;
     margin: 0 auto;
     position: sticky;
     top: 0;
-    z-index: 10;
 }
 
-.sizingGuide .info-header .header {
+.contentP .info-header .header {
     width: 100%;
     max-width: none;
     margin: 0;
@@ -2099,7 +2037,7 @@ nav.navbar_adjust header.header {
     align-items: center;
 }
 
-.sizingGuide .sunny-page {
+.contentP .sunny-page {
     width: 83vw;
     max-width: 1250px;
     margin: auto;
@@ -2107,14 +2045,14 @@ nav.navbar_adjust header.header {
     background: transparent;
 }
 
-.sizingGuide .headBox,
-.sizingGuide .sizes-grid,
-.sizingGuide .footContact {
+.contentP .headBox,
+.contentP .sizes-grid,
+.contentP .footContact {
     width: 100%;
     margin-top: 12px;
 }
 
-.sizingGuide .home-footer {
+.contentP .home-footer {
     width: 83vw;
     max-width: 1250px;
     margin: 28px auto;
@@ -2124,7 +2062,7 @@ nav.navbar_adjust header.header {
    INFORMATION PAGES DARK MODE
 ======================================== */
 
-body.sizingGuide.darkFooter {
+body.contentP.darkFooter {
     background: linear-gradient(120deg, #202034, #101116);
     color: #fffaf0;
 }
@@ -2199,3 +2137,427 @@ body.sizingGuide.darkFooter {
     color: #17346f;
 }
 
+/* order page */
+
+.order-body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #222;
+}
+
+.order-main {
+  width: min(1180px, 94%);
+  margin: 0 auto;
+  padding: 18px 0 28px;
+}
+
+.order-shell {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.order-form-panel {
+  background: #cfe0f5;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.order-title {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+}
+
+.order-subtitle {
+  margin: 8px 0 22px;
+  opacity: 0.8;
+}
+
+.order-form {
+  display: grid;
+  gap: 16px;
+}
+
+.order-field {
+  display: grid;
+  gap: 7px;
+}
+
+.order-field label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.order-field input,
+.order-field select {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #fff;
+  border-radius: 12px;
+  padding: 13px 14px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.order-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.order-section-heading {
+  margin-top: 8px;
+  font-weight: 800;
+  color: #39506c;
+}
+
+.order-item-card {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 14px;
+  align-items: center;
+  background: rgba(255,255,255,0.75);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.order-item-card img {
+  width: 62px;
+  height: 62px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.order-item-copy h3,
+.order-item-copy p {
+  margin: 0;
+}
+
+.order-item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  font-weight: 700;
+}
+
+.order-item-top span {
+  color: #ef6b55;
+}
+
+.order-item-copy p {
+  margin-top: 4px;
+  font-size: 0.92rem;
+  opacity: 0.75;
+}
+
+.order-item-meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+.order-note {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.92rem;
+  padding-top: 4px;
+}
+
+.order-actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.order-submit {
+  border: 0;
+  background: #f46a43;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 13px 22px;
+  cursor: pointer;
+}
+
+.order-cancel {
+  color: #5b6b7d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.order-sidebar {
+  display: grid;
+  gap: 14px;
+
+  position: sticky;
+  top: 96px;
+  align-self: start;
+}
+
+.order-hero-card {
+  position: relative;
+  min-height: 180px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url('/images/orderBox.jpg') center/cover no-repeat;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.order-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 58, 100, 0) 30%,
+    rgba(30, 58, 100, 0.85) 100%
+  );
+}
+
+.order-hero-text {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  color: #fff;
+}
+
+.order-hero-text p {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.order-hero-text span {
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.order-info-card {
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.order-info-card h3,
+.order-info-card p {
+  margin: 0;
+}
+
+.order-info-card p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+.order-info-card.mint {
+  background: #cfe9dc;
+}
+
+.order-info-card.yellow {
+  background: #f7dd88;
+}
+
+.order-footer {
+  width: min(1180px, 94%);
+  margin: 0 auto 18px;
+  background: linear-gradient(135deg, #20224f, #3a3f7a);
+  border-radius: 18px;
+  color: #fff;
+  padding: 22px 24px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.order-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.order-footer h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.order-footer p {
+  margin: 6px 0 0;
+  opacity: 0.8;
+}
+
+.order-footer-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.order-footer-links a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/* Stack the price and Remove button on the right. */
+.order-item-price-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+/* Small, orange, underlined Remove button. */
+.order-remove {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #ef6b55;
+  font-family: inherit;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+#orderItems {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.confirmation-main{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.confirmation-box{
+  border: 1px solid rgb(255, 181, 156);
+  width: 600px;
+  background-color: rgb(214, 245, 230);
+  box-shadow: 8px 8px 0 #ffc2ad;
+  border-radius: 1.5rem;
+  padding: 15px;
+}
+
+.confirmation-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 40px;
+
+
+  background-color: rgb(255, 243, 224);
+  border: 2px solid #ff5b35;
+  border-radius: 15px;
+
+  color: #2d2d2d;
+  font-size: 30px;
+}
+
+.confirmation-text{
+  display: flex;
+  justify-content: center;
+  p{
+    margin: 0;
+    color: rgb(241, 91, 57);
+    border: 1px solid rgb(255, 205, 184);
+    background-color: rgb(255, 243, 224);
+    border-radius: 3.40282e38px;
+    width: fit-content;
+    font-size: 14px;
+    padding: 1px 3px 1px 3px;
+  }
+}
+
+.confirmation-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  gap: 10px;
+  span{
+    color: #8a8a8a;
+  }
+  p{
+    margin: 0;
+    color: black;
+  }
+  .red{
+    color: red;
+  }
+}
+
+.confirmation-address{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  > div{
+    border: 1px solid #ffe0d6;
+    border-radius: 15px;
+    background-color: white;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 10px;
+    span{
+      color: #8a8a8a;
+      font-size: 18px;
+    }
+    p{
+      color: black;
+      font-size: 15px;
+    }
+  }
+}
+
+.confirmation-order{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  > div{
+    border: 1px solid #ffe0d6;
+    border-radius: 15px;
+    background-color: white;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 10px;
+    span{
+      color: #8a8a8a;
+      font-size: 18px;
+    }
+    p{
+      color: black;
+      font-size: 15px;
+    }
+  }
+}
+
+.confirmation-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ffe0d6;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    &:hover{
+      background-color: rgb(241, 91, 57);
+      color: white;
+    }
+  }
+}
